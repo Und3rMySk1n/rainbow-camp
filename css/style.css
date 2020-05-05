@@ -147,6 +147,11 @@ img
     margin-top: 4px;
 }
 
+.photo_caption.application_caption
+{
+    line-height: 21px;
+}
+
 .photo_caption_title
 {
     font-weight: 700;
@@ -496,10 +501,66 @@ img
 /* Activities */
 .activities_section
 {
-
+    margin-bottom: 66px;
 }
 
 .activities_section .photo_caption_wrapper
 {
     margin-bottom: 49px;
+}
+
+/* Music */
+.music_section
+{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 59px;
+}
+
+.music_section .music
+{
+    width: 508px;
+}
+
+.music_section .music img
+{
+    margin-left: -35px;
+    margin-top: 23px;
+}
+
+.music_section .music .photo_caption
+{
+    width: 272px;
+}
+
+.music_section .cartoons
+{
+    width: 240px;
+}
+
+.music_section .cartoons img
+{
+    margin: 16px 0 21px -27px;
+}
+
+.music_section .cartoons .photo_caption
+{
+    margin-top: 10px;
+}
+
+/* Robotics */
+.robotics_section
+{
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.lego
+{
+    position: absolute;
+    width: 376px;
+    height: 346px;
+    bottom: -35px;
+    right: -169px;
+    background: url('../images/lego.png') no-repeat;
 }

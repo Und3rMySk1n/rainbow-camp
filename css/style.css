@@ -1,0 +1,505 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+    color: #000;
+    box-sizing: border-box;
+}
+
+img
+{
+    max-width: 100%;
+}
+
+.indivisible_text
+{
+    display: inline-block;
+}
+
+.content_wrapper
+{
+    max-width: 840px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.content_title
+{
+    font-size: 33px;
+    font-weight: 700;
+    color: #030303;
+    margin: 0 0 23px;
+}
+
+.content_title.block_title
+{
+    margin: 0 0 16px;
+}
+
+.content_text
+{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    margin: 0 0 22px;
+}
+
+.content_text.limited_with
+{
+    max-width: 600px;
+}
+
+.video_wrapper
+{
+    position: relative;
+    cursor: pointer;
+}
+
+.video_wrapper:hover .play_button
+{
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.play_button
+{
+    transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 134px;
+    height: 134px;
+    background: url('../images/play-button.svg');
+    top: 50%;
+    left: 50%;
+}
+
+.video_duration
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1;
+}
+
+.video_caption
+{
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 6px;
+}
+
+.block_with_background
+{
+    overflow-x: hidden;
+    position: relative;
+}
+
+.blue_spot
+{
+    position: absolute;
+    width: 910px;
+    top: 49px;
+    left: 50%;
+    transform: translateX(-8.7%);
+    z-index: -1;
+}
+
+.purple_spot
+{
+    position: absolute;
+    width: 1354px;
+    top: -51px;
+    left: 50%;
+    transform: translateX(-68.2%);
+    z-index: -1;
+}
+
+.yellow_spot
+{
+    position: absolute;
+    width: 1086px;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-16%);
+    z-index: -1;
+}
+
+.photo_caption_wrapper
+{
+    display: flex;
+}
+
+.photo_caption_wrapper.right
+{
+    justify-content: flex-end;
+}
+
+.photo_caption
+{
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 4px;
+}
+
+.photo_caption_title
+{
+    font-weight: 700;
+}
+
+.photo_caption_title.single_line
+{
+    display: block;
+}
+
+.photo_caption.limited_width
+{
+    width: 381px;
+}
+
+.new_skills_title
+{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    margin: 0;
+}
+
+/* Main info */
+.main_info_section
+{
+    margin-top: -11px;
+    margin-bottom: 89px;
+}
+
+.block_with_notice
+{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.text_part
+{
+    max-width: 600px;
+    margin-right: 20px;
+}
+
+.top_block_video
+{
+    margin-top: 8px;
+}
+
+/* 15 minutes notice */
+.notice_15_minutes
+{
+    width: 160px;
+    flex-shrink: 0;
+}
+
+.notice_15_minutes .fifteen_minutes
+{
+    display: block;
+    margin-left: 9px;
+}
+
+.notice_15_minutes .minutes_text
+{
+    color: #FF9516;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+    margin: 0;
+    text-align: center;
+}
+
+.notice_15_minutes .trip_details_text
+{
+    text-align: center;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+/* Different shifts */
+.shifts_section
+{
+    margin-bottom: 132px;
+}
+
+.different_shifts
+{
+    margin-bottom: 48px;
+}
+
+/* Details with photo */
+.details_with_photo
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: -10px;
+}
+
+.details_with_photo .details_wrapper
+{
+    width: 340px;
+    margin-right: 20px;
+    padding-top: 70px;
+}
+
+.details_with_photo .photo_wrapper
+{
+    width: 380px;
+    flex-grow: 0;
+}
+
+.details_with_photo .photo_wrapper img
+{
+    display: block;
+}
+
+/* Dancing */
+.dancing_section
+{
+    margin-bottom: 0;
+}
+
+.details_with_photo.dancing
+{
+    justify-content: flex-start;
+    margin-top: -31px;
+}
+
+.details_with_photo.dancing .details_wrapper
+{
+    margin-right: 0;
+    padding-top: 91px;
+}
+
+.details_with_photo.dancing .photo_wrapper
+{
+    margin-right: 40px;
+}
+
+/* Friendship */
+.friendship_section
+{
+    padding-top: 137px;
+    margin-top: -60px;
+    margin-bottom: 102px;
+}
+
+.friendship_section .details_wrapper
+{
+    width: 375px;
+}
+
+/* Comfort */
+.comfort_section
+{
+    margin-bottom: 196px;
+}
+
+.comfort_section .content_wrapper
+{
+    position: relative;
+    margin-bottom: 32px;
+}
+
+.comfort_section .content_text
+{
+    max-width: 560px;
+}
+
+.small_orange_spot
+{
+    padding: 49px 47px 10px 92px;
+    width: 317px;
+    height: 312px;
+    background: url('../images/orange-spot.png') no-repeat;
+    position: absolute;
+    top: 22px;
+    right: -40px;
+}
+
+.small_purple_spot
+{
+    padding: 61px 58px 50px 81px;
+    width: 297px;
+    height: 303px;
+    background: url('../images/purple-spot.png') no-repeat;
+    position: absolute;
+    bottom: -140px;
+    left: 160px;
+}
+
+.icon_bottle
+{
+    width: 48px;
+    height: 98px;
+    margin: 0 0 9px 59px;
+    background: url('../images/icon-bottle.svg') no-repeat;
+}
+
+.icon_washing_hands
+{
+    width: 74px;
+    height: 80px;
+    margin: 0 0 19px 39px;
+    background: url('../images/icon-hand.svg') no-repeat;
+}
+
+.wide_photo_wrapper
+{
+    max-width: 1280px;
+    margin: 0 auto 30px;
+}
+
+.wide_photo_wrapper.bottom
+{
+    position: relative;
+    margin: 0 auto;
+}
+
+.spot_text
+{
+    color: #fff;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+/* Food menu */
+.food_menu_section
+{
+    margin-bottom: 100px;
+}
+
+.food_menu_section .content_wrapper
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 0;
+    position: relative;
+}
+
+.food_menu_section .description
+{
+    width: 510px;
+}
+
+.food_menu_section .menu_wrapper
+{
+    width: 100%;
+    margin-top: 10px;
+}
+
+.sticker_wrapper
+{
+    position: absolute;
+    right: 4px;
+    top: 15px;
+    width: 298px;
+}
+
+/* Adventures */
+.adventures_section
+{
+    margin-bottom: 12px;
+}
+
+.adventures_section .content_wrapper
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.adventures_section .description
+{
+    width: 580px;
+}
+
+.adventures_section .notice
+{
+    width: 186px;
+}
+
+.adventures_section .notice_description
+{
+    font-size: 16px;
+    line-height: 21px;
+    margin-top: -28px;
+}
+
+.adventures_section .notice_image
+{
+    margin-top: -29px;
+    max-width: none;
+    margin-left: -10px;
+}
+
+.adventures_section .notice_title
+{
+    display: block;
+    font-weight: bold;
+}
+
+/* Reconstruction */
+.reconstruction_section
+{
+    margin-bottom: 43px;
+}
+
+/* Painting */
+.painting_section
+{
+    display: flex;
+    margin-bottom: 62px;
+}
+
+.painting_section .painting
+{
+    width: 392px;
+    margin-right: -24px;
+}
+
+.painting_section .theater
+{
+    width: 490px;
+    margin-left: -35px;
+    margin-top: -7px;
+    margin-right: -25px;
+    position: relative;
+}
+
+.painting_section .theater .photo_caption
+{
+    position: absolute;
+    left: -40px;
+    bottom: 214px;
+    width: 250px;
+}
+
+.picture_frame
+{
+    margin-bottom: 31px;
+}
+
+.painting .photo_caption
+{
+    max-width: 234px;
+}
+
+/* Activities */
+.activities_section
+{
+
+}
+
+.activities_section .photo_caption_wrapper
+{
+    margin-bottom: 49px;
+}

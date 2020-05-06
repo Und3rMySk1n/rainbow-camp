@@ -87,7 +87,8 @@ img
     line-height: 1;
 }
 
-.video_wrapper
+.main_info_section .video_wrapper,
+.dancing_section .video_wrapper
 {
     width: 800px;
     height: 450px;

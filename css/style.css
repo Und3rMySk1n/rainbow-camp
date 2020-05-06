@@ -82,7 +82,7 @@ img
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-weight: bold;
+    font-weight: 700;
     font-size: 20px;
     line-height: 1;
 }
@@ -449,7 +449,7 @@ img
 .adventures_section .notice_title
 {
     display: block;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 /* Reconstruction */
@@ -637,7 +637,7 @@ img
 /* Safety */
 .safety_section
 {
-    margin-bottom: 100px;
+    margin-bottom: 128px;
 }
 
 .safety_features
@@ -698,3 +698,153 @@ img
     background: url('../images/icon-guard.svg') no-repeat;
     margin: 12px 0 25px;
 }
+
+/* Map */
+.map_section
+{
+    max-width: 880px;
+    padding: 42px 40px 35px;
+    position: relative;
+    background: linear-gradient(132.16deg, rgba(255, 189, 109, 0.8) -5.96%, rgba(255, 228, 132, 0.8) 99.46%);
+    margin: 0 auto 104px;
+}
+
+.map_wrapper
+{
+    margin-top: 30px;
+    margin-bottom: 17px;
+}
+
+.map_details
+{
+    display: flex;
+}
+
+.map_details_name
+{
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 26px;
+    width: 182px;
+    margin-right: 36px;
+}
+
+.map_details_title
+{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    margin: 3px 0 0;
+}
+
+.map_details_subtitle
+{
+    font-size: 16px;
+    line-height: 18px;
+    margin: 0 0 10px;
+}
+
+.map_details_description
+{
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.by_car
+{
+    width: 164px;
+    margin-right: 38px;
+}
+
+.by_bus
+{
+    width: 196px;
+}
+
+/* FAQ */
+.faq_section
+{
+    margin-bottom: 100px;
+}
+
+.questions_and_docs
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.questions
+{
+    width: 610px;
+    margin-right: 30px;
+}
+
+.docs
+{
+    padding-top: 6px;
+}
+
+.docs .doc_image
+{
+    display: block;
+    border: 1px solid #B0B0B0;
+    margin-bottom: 5px;
+}
+
+.docs .doc_link,
+.questions .doc_link
+{
+    color: #0072DB;
+    text-decoration: underline;
+}
+
+.docs .doc_link
+{
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.question_title
+{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    color: #070707;
+    margin: 0;
+}
+
+.question_answer,
+.list_item
+{
+    font-size: 18px;
+    line-height: 23px;
+    color: #070707;
+    margin: 0 0 23px;
+}
+
+.question_answer.last
+{
+    margin: 0 0 40px;
+}
+
+.question_answer.before_next_question
+{
+    margin: 0 0 31px;
+}
+
+.questions_list
+{
+    padding-left: 64px;
+    margin-bottom: 36px;
+}
+
+.list_item
+{
+    margin: 0 0 17px;
+}
+
+.question_answer.no_indent
+{
+    margin-bottom: 0;
+}
+

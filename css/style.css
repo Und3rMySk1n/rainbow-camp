@@ -82,7 +82,7 @@ img
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-weight: bold;
+    font-weight: 700;
     font-size: 20px;
     line-height: 1;
 }
@@ -263,7 +263,7 @@ img
 /* Different shifts */
 .shifts_section
 {
-    margin-bottom: 132px;
+    padding-bottom: 32px;
 }
 
 .different_shifts
@@ -324,7 +324,7 @@ img
 .friendship_section
 {
     padding-top: 137px;
-    margin-top: -60px;
+    margin-top: -138px;
     margin-bottom: 102px;
 }
 
@@ -479,7 +479,7 @@ img
 .adventures_section .notice_title
 {
     display: block;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 /* Reconstruction */
@@ -582,7 +582,7 @@ img
 .robotics_section
 {
     position: relative;
-    margin-bottom: 100px;
+    margin-bottom: 148px;
 }
 
 .lego
@@ -593,4 +593,495 @@ img
     bottom: -35px;
     right: -169px;
     background: url('../images/lego.png') no-repeat;
+}
+
+/* Teachers */
+.teachers_section
+{
+    background: radial-gradient(106.82% 161.12% at 52.49% 19.11%, #FFAF25 0%, #FF9516 40.62%, #FF8A00 100%);
+    padding-top: 59px;
+    margin-bottom: 106px;
+}
+
+.teachers_section .content_title,
+.teachers_section .leader_description,
+.teachers_section .leader_name,
+.teachers_section .teacher_description,
+.teachers_section .teacher_name,
+.teachers_section .photo_caption,
+.teachers_section .photo_caption_title,
+.teachers_section .indivisible_text
+{
+    color: #fff;
+}
+
+.teachers_section .leader_description
+{
+    position: absolute;
+    left: 20px;
+    top: 91px;
+    width: 210px;
+}
+
+.teachers_section .leader_name
+{
+    position: absolute;
+    left: 20px;
+    bottom: 30px;
+}
+
+.teachers_section .teacher_description
+{
+    position: absolute;
+    right: -5px;
+    top: 91px;
+    width: 212px;
+}
+
+.teachers_section .teacher_name
+{
+    position: absolute;
+    right: -2px;
+    bottom: 30px;
+}
+
+.teachers_section .content_wrapper
+{
+    position: relative;
+}
+
+.teachers_photo
+{
+    display: block;
+    margin: 36px auto 0;
+    transform: translateX(-5px);
+}
+
+.teachers_section .photo_caption
+{
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 22px;
+}
+
+/* Safety */
+.safety_section
+{
+    margin-bottom: 128px;
+}
+
+.safety_features
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.safety_feature_title
+{
+    font-weight: 700;
+    margin: 0;
+}
+
+.safety_feature_text,
+.safety_feature_title
+{
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.mosquito
+{
+    width: 222px;
+}
+
+.first_aid
+{
+    width: 248px;
+}
+
+.guard
+{
+    width: 245px;
+}
+
+.mosquito_icon
+{
+    width: 72px;
+    height: 71px;
+    background: url('../images/icon-mosquito.svg') no-repeat;
+    margin-bottom: 24px;
+}
+
+.first_aid_icon
+{
+    width: 88px;
+    height: 69px;
+    background: url('../images/icon-first-aid-post.svg') no-repeat;
+    margin-bottom: 25px;
+}
+
+.guard_icon
+{
+    width: 88px;
+    height: 57px;
+    background: url('../images/icon-guard.svg') no-repeat;
+    margin: 12px 0 25px;
+}
+
+/* Map */
+.map_section
+{
+    max-width: 880px;
+    padding: 42px 40px 35px;
+    position: relative;
+    background: linear-gradient(132.16deg, rgba(255, 189, 109, 0.8) -5.96%, rgba(255, 228, 132, 0.8) 99.46%);
+    margin: 0 auto 104px;
+}
+
+.map_section_spot
+{
+    width: 331px;
+    height: 322px;
+    background: url('../images/red-spot-new.png') no-repeat;
+    position: absolute;
+    top: -46px;
+    right: 38px;
+    font-size: 20px;
+    line-height: 25px;
+    color: #FFFFFF;
+    padding: 127px 32px 108px 91px;
+}
+
+.map_wrapper
+{
+    margin-top: 30px;
+    margin-bottom: 17px;
+}
+
+.map_details
+{
+    display: flex;
+}
+
+.map_details_name
+{
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 26px;
+    width: 182px;
+    margin-right: 36px;
+}
+
+.map_details_title
+{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    margin: 3px 0 0;
+}
+
+.map_details_subtitle
+{
+    font-size: 16px;
+    line-height: 18px;
+    margin: 0 0 10px;
+}
+
+.map_details_description
+{
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.by_car
+{
+    width: 164px;
+    margin-right: 38px;
+}
+
+.by_bus
+{
+    width: 196px;
+}
+
+/* FAQ */
+.faq_section
+{
+    margin-bottom: 108px;
+}
+
+.questions_and_docs
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.questions
+{
+    width: 610px;
+    margin-right: 30px;
+}
+
+.docs
+{
+    padding-top: 6px;
+}
+
+.docs .doc_image
+{
+    display: block;
+    border: 1px solid #B0B0B0;
+    margin-bottom: 5px;
+}
+
+.docs .doc_link,
+.questions .doc_link
+{
+    color: #0072DB;
+    text-decoration: underline;
+}
+
+.docs .doc_link
+{
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.question_title
+{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    color: #070707;
+    margin: 0;
+}
+
+.question_answer,
+.list_item
+{
+    font-size: 18px;
+    line-height: 23px;
+    color: #070707;
+    margin: 0 0 23px;
+}
+
+.question_answer.last
+{
+    margin: 0 0 40px;
+}
+
+.question_answer.before_next_question
+{
+    margin: 0 0 31px;
+}
+
+.questions_list
+{
+    padding-left: 64px;
+    margin-bottom: 36px;
+}
+
+.list_item
+{
+    margin: 0 0 17px;
+}
+
+.question_answer.no_indent
+{
+    margin-bottom: 0;
+}
+
+/* Order */
+.order_section
+{
+    max-width: 880px;
+    margin: 0 auto 100px;
+    padding: 43px 39px 40px;
+    background: linear-gradient(139.75deg, #FF8A00 35.21%, #FFAF25 89.67%);
+    position: relative;
+}
+
+.order_section .content_title,
+.order_section .content_text,
+.order_section .order_features_list li,
+.order_section .submit_button,
+.order_section .form_notice
+{
+    color: #fff;
+}
+
+.order_section .content_text
+{
+    margin: 0;
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.order_section .order_features_list
+{
+    list-style: none;
+    max-width: 325px;
+    margin-bottom: 83px;
+}
+
+.order_section .order_features_list li
+{
+    margin-bottom: 7px;
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.order_form .submit_button
+{
+    background: #0072DB;
+    line-height: 54px;
+    width: 310px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.order_form .form_input
+{
+    line-height: 54px;
+    width: 310px;
+    display: block;
+    background: #fff;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    margin-bottom: 11px;
+    padding: 0 15px;
+}
+
+.order_form .form_input::placeholder
+{
+    color: #C8C8C8;
+}
+
+.order_section .form_notice
+{
+    width: 226px;
+}
+
+.form_image
+{
+    position: absolute;
+    top: -94px;
+    right: -40px;
+}
+
+/* Footer */
+.footer_section
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 19px 20px 50px;
+}
+
+.phones_wrapper
+{
+    margin-right: 39px;
+    width: 240px;
+}
+
+.developers
+{
+    flex-grow: 1;
+    width: 284px;
+    margin-right: 20px;
+}
+
+.copyright
+{
+    font-size: 14px;
+    line-height: 18px;
+    color: #0072DB;
+    margin: 0;
+}
+
+.phone
+{
+    display: block;
+    margin: 0 0 3px;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.call_details
+{
+    display: block;
+    margin: 0;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.developers_list
+{
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.bureau
+{
+    font-size: 14px;
+    line-height: 19px;
+    color: #0072DB;
+}
+
+/* Absolute images */
+.shifted_image_block
+{
+    position: relative;
+}
+
+.belt_description
+{
+    width: 156px;
+    position: absolute;
+    transform: rotate(-19deg);
+    top: 127px;
+    left: 203px;
+}
+
+.belt_image
+{
+    margin-top: 23px;
+    margin-left: -56px;
+}
+
+.dress_description
+{
+    width: 165px;
+    transform: rotate(-19deg);
+    position: absolute;
+    top: 136px;
+    left: 35px;
+}
+
+.dress_image
+{
+    margin-top: -57px;
+    margin-left: 141px;
+}
+
+.national_belt_description
+{
+    width: 146px;
+    transform: rotate(-19deg);
+    position: absolute;
+    top: 83px;
+    left: 173px;
+}
+
+.national_belt_image
+{
+    margin-top: 39px;
+    margin-left: -70px;
+    max-width: none;
 }

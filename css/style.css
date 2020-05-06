@@ -709,6 +709,20 @@ img
     margin: 0 auto 104px;
 }
 
+.map_section_spot
+{
+    width: 331px;
+    height: 322px;
+    background: url('../images/red-spot.png') no-repeat;
+    position: absolute;
+    top: -46px;
+    right: 38px;
+    font-size: 20px;
+    line-height: 25px;
+    color: #FFFFFF;
+    padding: 127px 32px 108px 91px;
+}
+
 .map_wrapper
 {
     margin-top: 30px;

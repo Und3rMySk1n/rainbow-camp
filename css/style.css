@@ -87,6 +87,36 @@ img
     line-height: 1;
 }
 
+.video_wrapper
+{
+    width: 800px;
+    height: 450px;
+}
+
+.video_wrapper .video_frame,
+.video_wrapper .video_poster
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video_wrapper .video_poster,
+.video_wrapper .play_button,
+.video_wrapper .video_duration
+{
+    display: none;
+}
+
+.video_wrapper.custom_play_button .video_poster,
+.video_wrapper.custom_play_button .play_button,
+.video_wrapper.custom_play_button .video_duration
+{
+    display: initial;
+    position: absolute;
+}
+
 .video_caption
 {
     font-size: 16px;

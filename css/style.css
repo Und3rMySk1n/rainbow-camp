@@ -12,6 +12,10 @@ img
     max-width: 100%;
 }
 
+.not_underlined {
+    text-decoration: none;
+}
+
 .indivisible_text
 {
     display: inline-block;

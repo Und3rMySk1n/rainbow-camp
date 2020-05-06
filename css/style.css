@@ -764,7 +764,7 @@ img
 /* FAQ */
 .faq_section
 {
-    margin-bottom: 100px;
+    margin-bottom: 108px;
 }
 
 .questions_and_docs
@@ -848,3 +848,144 @@ img
     margin-bottom: 0;
 }
 
+/* Order */
+.order_section
+{
+    max-width: 880px;
+    margin: 0 auto 100px;
+    padding: 43px 39px 40px;
+    background: linear-gradient(139.75deg, #FF8A00 35.21%, #FFAF25 89.67%);
+    position: relative;
+}
+
+.order_section .content_title,
+.order_section .content_text,
+.order_section .order_features_list li,
+.order_section .submit_button,
+.order_section .form_notice
+{
+    color: #fff;
+}
+
+.order_section .content_text
+{
+    margin: 0;
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.order_section .order_features_list
+{
+    list-style: none;
+    max-width: 325px;
+    margin-bottom: 83px;
+}
+
+.order_section .order_features_list li
+{
+    margin-bottom: 7px;
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.order_form .submit_button
+{
+    background: #0072DB;
+    line-height: 54px;
+    width: 310px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.order_form .form_input
+{
+    line-height: 54px;
+    width: 310px;
+    display: block;
+    background: #fff;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    margin-bottom: 11px;
+    padding: 0 15px;
+}
+
+.order_form .form_input::placeholder
+{
+    color: #C8C8C8;
+}
+
+.order_section .form_notice
+{
+    width: 226px;
+}
+
+.form_image
+{
+    position: absolute;
+    top: -94px;
+    right: -40px;
+}
+
+/* Footer */
+.footer_section
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 19px 20px 50px;
+}
+
+.phones_wrapper
+{
+    margin-right: 39px;
+    width: 240px;
+}
+
+.developers
+{
+    flex-grow: 1;
+    width: 284px;
+    margin-right: 20px;
+}
+
+.copyright
+{
+    font-size: 14px;
+    line-height: 18px;
+    color: #0072DB;
+    margin: 0;
+}
+
+.phone
+{
+    display: block;
+    margin: 0 0 3px;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.call_details
+{
+    display: block;
+    margin: 0;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.developers_list
+{
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.bureau
+{
+    font-size: 14px;
+    line-height: 19px;
+    color: #0072DB;
+}

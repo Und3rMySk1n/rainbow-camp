@@ -552,7 +552,7 @@ img
 .robotics_section
 {
     position: relative;
-    margin-bottom: 100px;
+    margin-bottom: 148px;
 }
 
 .lego
@@ -563,4 +563,138 @@ img
     bottom: -35px;
     right: -169px;
     background: url('../images/lego.png') no-repeat;
+}
+
+/* Teachers */
+.teachers_section
+{
+    background: radial-gradient(106.82% 161.12% at 52.49% 19.11%, #FFAF25 0%, #FF9516 40.62%, #FF8A00 100%);
+    padding-top: 59px;
+    margin-bottom: 106px;
+}
+
+.teachers_section .content_title,
+.teachers_section .leader_description,
+.teachers_section .leader_name,
+.teachers_section .teacher_description,
+.teachers_section .teacher_name,
+.teachers_section .photo_caption,
+.teachers_section .photo_caption_title,
+.teachers_section .indivisible_text
+{
+    color: #fff;
+}
+
+.teachers_section .leader_description
+{
+    position: absolute;
+    left: 20px;
+    top: 91px;
+    width: 210px;
+}
+
+.teachers_section .leader_name
+{
+    position: absolute;
+    left: 20px;
+    bottom: 30px;
+}
+
+.teachers_section .teacher_description
+{
+    position: absolute;
+    right: -5px;
+    top: 91px;
+    width: 212px;
+}
+
+.teachers_section .teacher_name
+{
+    position: absolute;
+    right: -2px;
+    bottom: 30px;
+}
+
+.teachers_section .content_wrapper
+{
+    position: relative;
+}
+
+.teachers_photo
+{
+    display: block;
+    margin: 36px auto 0;
+    transform: translateX(-5px);
+}
+
+.teachers_section .photo_caption
+{
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 22px;
+}
+
+/* Safety */
+.safety_section
+{
+    margin-bottom: 100px;
+}
+
+.safety_features
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.safety_feature_title
+{
+    font-weight: 700;
+    margin: 0;
+}
+
+.safety_feature_text,
+.safety_feature_title
+{
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.mosquito
+{
+    width: 222px;
+}
+
+.first_aid
+{
+    width: 248px;
+}
+
+.guard
+{
+    width: 245px;
+}
+
+.mosquito_icon
+{
+    width: 72px;
+    height: 71px;
+    background: url('../images/icon-mosquito.svg') no-repeat;
+    margin-bottom: 24px;
+}
+
+.first_aid_icon
+{
+    width: 88px;
+    height: 69px;
+    background: url('../images/icon-first-aid-post.svg') no-repeat;
+    margin-bottom: 25px;
+}
+
+.guard_icon
+{
+    width: 88px;
+    height: 57px;
+    background: url('../images/icon-guard.svg') no-repeat;
+    margin: 12px 0 25px;
 }

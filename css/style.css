@@ -233,7 +233,7 @@ img
 /* Different shifts */
 .shifts_section
 {
-    margin-bottom: 132px;
+    padding-bottom: 32px;
 }
 
 .different_shifts
@@ -294,7 +294,7 @@ img
 .friendship_section
 {
     padding-top: 137px;
-    margin-top: -60px;
+    margin-top: -138px;
     margin-bottom: 102px;
 }
 
@@ -1002,4 +1002,56 @@ img
     font-size: 14px;
     line-height: 19px;
     color: #0072DB;
+}
+
+/* Absolute images */
+.shifted_image_block
+{
+    position: relative;
+}
+
+.belt_description
+{
+    width: 156px;
+    position: absolute;
+    transform: rotate(-19deg);
+    top: 127px;
+    left: 203px;
+}
+
+.belt_image
+{
+    margin-top: 23px;
+    margin-left: -56px;
+}
+
+.dress_description
+{
+    width: 165px;
+    transform: rotate(-19deg);
+    position: absolute;
+    top: 136px;
+    left: 35px;
+}
+
+.dress_image
+{
+    margin-top: -57px;
+    margin-left: 141px;
+}
+
+.national_belt_description
+{
+    width: 146px;
+    transform: rotate(-19deg);
+    position: absolute;
+    top: 83px;
+    left: 173px;
+}
+
+.national_belt_image
+{
+    margin-top: 39px;
+    margin-left: -70px;
+    max-width: none;
 }

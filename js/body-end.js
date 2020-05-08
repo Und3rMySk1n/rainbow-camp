@@ -25,12 +25,14 @@ const VIDEOS = [
 if (isEnvBrowser) {
     const videos = VIDEOS
         .map( video => ({
-            ...video, domElement: document.querySelector(`.${video.sectionClassName} .${CLASS_VIDEO_WRAPPER}.${CLASS_TOP_BLOCK_VIDEO}`)
+            ...video, domElement: document.querySelector(`.${video.sectionClassName} .${CLASS_VIDEO_WRAPPER}`)
         }) )
         .filter( ({ domElement }) => domElement );
     
     
     for (const { poster, domElement } of videos) {
+        console.dir(poster);
+        console.dir(domElement);
         domElement.addEventListener('click', () => {
             if (domElement.classList.contains(CLASS_CUSTOM_PLAY_BUTTON)) {
                 domElement.classList.remove(CLASS_CUSTOM_PLAY_BUTTON);

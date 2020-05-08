@@ -853,6 +853,10 @@ img
     padding-top: 6px;
 }
 
+.docs .med {
+    cursor: pointer;
+}
+
 .docs .med .doc_image
 {
     display: block;

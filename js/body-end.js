@@ -1,3 +1,10 @@
+const isEnvBrowser = typeof window !== 'undefined';
+const isEnvNode = !isEnvBrowser && module && module.exports;
+
+// const NEGLIGIBLE_SYMBOLS = '+- _';
+const RU_TEL_CODE = '7';
+const telCode = (code) => `+${code}`;
+
 const CLASS_VIDEO_WRAPPER = 'video_wrapper';
 const CLASS_TOP_BLOCK_VIDEO = 'top_block_video';
 const CLASS_CUSTOM_PLAY_BUTTON = 'custom_play_button';
@@ -15,21 +22,306 @@ const VIDEOS = [
     }
 ];
 
-const videos = VIDEOS
-    .map( video => ({
-        ...video, domElement: document.querySelector(`.${video.sectionClassName} .${CLASS_VIDEO_WRAPPER}.${CLASS_TOP_BLOCK_VIDEO}`)
-    }) )
-    .filter( ({ domElement }) => domElement );
+if (isEnvBrowser) {
+    const videos = VIDEOS
+        .map( video => ({
+            ...video, domElement: document.querySelector(`.${video.sectionClassName} .${CLASS_VIDEO_WRAPPER}.${CLASS_TOP_BLOCK_VIDEO}`)
+        }) )
+        .filter( ({ domElement }) => domElement );
+    
+    
+    for (const { poster, domElement } of videos) {
+        domElement.addEventListener('click', () => {
+            if (domElement.classList.contains(CLASS_CUSTOM_PLAY_BUTTON)) {
+                domElement.classList.remove(CLASS_CUSTOM_PLAY_BUTTON);
+                domElement.querySelector(`.${CLASS_VIDEO_FRAME}`).src += '&autoplay=1';
+            }
+        });
+    
+        domElement.querySelector(`.${CLASS_VIDEO_POSTER}`).src = poster;
+        domElement.classList.add(CLASS_CUSTOM_PLAY_BUTTON);
+    }
+    
+    for (const input of document.querySelectorAll('.form_input[name="phone"]')) {
+        input.addEventListener('input', formatTelephoneNumberInput);
+        input.addEventListener('keypress', formatTelephoneNumberInput);
+        input.addEventListener('focus', formatTelephoneNumberInput);
+        input.addEventListener('selectionchange', formatTelephoneNumberInput);
 
+        input.addEventListener('blur', ({ target }) => {
+            if (makeTelephoneNumberSimplest(target.value).value === RU_TEL_CODE) {
+                target.value = '';
+            }
+        });
 
-for (const { poster, domElement } of videos) {
-    domElement.addEventListener('click', () => {
-        if (domElement.classList.contains(CLASS_CUSTOM_PLAY_BUTTON)) {
-            domElement.classList.remove(CLASS_CUSTOM_PLAY_BUTTON);
-            domElement.querySelector(`.${CLASS_VIDEO_FRAME}`).src += '&autoplay=1';
+        // tmp:
+        input.addEventListener('input', event => {
+            console.dir(event);
+        });
+        input.addEventListener('focus', event => {
+            console.dir(event);
+        });
+        input.addEventListener('keypress', event => {
+            console.dir(event);
+        });
+        input.addEventListener('keydown', event => {
+            console.log();
+            console.dir(event);
+            console.dir(event.target.value);
+        });
+    }
+}
+
+function formatTelephoneNumberInput(event) {
+    console.log('formatTelephoneNumberInput()');
+    
+    const { type } = event;
+
+    // if (type === 'keypress') {
+    //     const { key, preventDefault } = event;
+
+    //     if (!isDigit(key)) {
+    //         preventDefault();
+    //     }
+    // }
+
+    const { inputType, target } = event;
+    const { selectionStart, selectionEnd } = target;
+
+    if (type === 'keydown') {
+        const { key, preventDefault } = event;
+
+        if (!isDigit(key) && key !== 'Backspace' && key !== 'Delete') {
+            preventDefault();
         }
-    });
 
-    domElement.querySelector(`.${CLASS_VIDEO_POSTER}`).src = poster;
-    domElement.classList.add(CLASS_CUSTOM_PLAY_BUTTON);
+        if (selectionStart !== selectionEnd) {
+            return;
+        }
+
+        // const shift = selectionStart !== selectionEnd ? 0 : inputType === 'deleteContentBackward' && !isDigit(target.value[selectionStart - 1]) ? -1 : inputType === 'deleteContentForward' && !isDigit(target.value[selectionStart]) ? 1 : 0;
+        // FIXME: Shift length = 1 is coincidence only. Shold calclulate real length.
+        
+        // const shift = 0;
+        // const start = selectionStart + shift;
+        // const end = selectionEnd + shift;
+        
+        // const { value, cursorPos } = formatTelephoneNumber(target.value, target.selectionStart);
+
+        // const { cursorPos } = formatTelephoneNumber(target.value.slice(0, start), start, true);
+        // const { value } = formatTelephoneNumber(target.value.slice(0, start) + target.value.slice(start), start);
+        
+        if (key === 'Backspace') {
+            preventDefault();
+
+            const beforeCursor = makeTelephoneNumberSimplest(
+                target.value.slice(0, selectionStart),
+                [selectionStart, selectionStart - 1]
+            );
+
+            const cursor = selectionStart - beforeCursor.countOfDeletedSymbol
+            
+            const { value, cursorPos } = formatTelephoneNumber(
+                beforeCursor.value.slice(0, beforeCursor.value.length - 1)
+                    + target.value.slice(selectionStart),
+                selectionStart - 1
+            );
+
+            setTimeout(() => {
+                target.setRangeText(value.slice(cursorPos), 0, target.value.length, 'end');
+                target.setRangeText(value.slice(0, cursorPos), 0, 0, 'end');
+            });
+            
+            console.log(`shift = ${shift}`);
+            console.log(value.slice(0, cursorPos));
+            console.log(value.slice(cursorPos));
+        }
+
+        if (key === 'Delete') {
+            // 
+        }
+    }
+
+    if (inputType === 'insertText' || inputType === 'insertFromPaste' || type === 'focus') {
+        const { value, cursorPos } = formatTelephoneNumber(target.value, selectionStart, type === 'focus');
+
+        target.setRangeText(value.slice(cursorPos), 0, target.value.length, 'end');
+        target.setRangeText(value.slice(0, cursorPos), 0, 0, 'end');
+        // Setting in two steps to set cursor in middle of inserted text.
+
+        console.log(value.slice(0, cursorPos));
+        console.log(value.slice(cursorPos));
+        
+        console.log(`cursorPos = ${cursorPos}`);
+        console.log(`selectionStart = ${selectionStart}`);
+        // console.log(`cursorShift = ${cursorShift}`);
+        
+        if (type === 'focus') {
+            setTimeout(() => {
+                target.setSelectionRange(cursorPos, cursorPos);
+            });
+        }
+    }
+
+    // if (inputType === 'deleteContentBackward' || inputType === 'deleteContentForward') {
+    //     if (selectionStart !== selectionEnd) {
+    //         return true;
+    //     }
+
+    //     const shift = selectionStart !== selectionEnd ? 0 : inputType === 'deleteContentBackward' && !isDigit(target.value[selectionStart - 1]) ? -1 : inputType === 'deleteContentForward' && !isDigit(target.value[selectionStart]) ? 1 : 0;
+    //     // FIXME: Shift length = 1 is coincidence only. Shold calclulate real length.
+        
+    //     // const shift = 0;
+    //     const start = selectionStart + shift;
+    //     // const end = selectionEnd + shift;
+        
+    //     // const { value, cursorPos } = formatTelephoneNumber(target.value, target.selectionStart);
+
+    //     // const { cursorPos } = formatTelephoneNumber(target.value.slice(0, start), start, true);
+    //     // const { value } = formatTelephoneNumber(target.value.slice(0, start) + target.value.slice(start), start);
+        
+    //     if (inputType === 'deleteContentBackward') {
+    //         const beforeCursor = makeTelephoneNumberSimplest(target.value.slice(0, selectionStart)).value;
+            
+    //         const { value, cursorPos } = formatTelephoneNumber(
+    //             beforeCursor.slice(0, beforeCursor.length - 1)
+    //                 + target.value.slice(selectionStart),
+    //             selectionStart - 1
+    //         );
+    //         target.setRangeText(value.slice(cursorPos), 0, target.value.length, 'end');
+    //         target.setRangeText(value.slice(0, cursorPos), 0, 0, 'end');
+            
+    //         console.log(`shift = ${shift}`);
+    //         console.log(value.slice(0, cursorPos));
+    //         console.log(value.slice(cursorPos));
+    //     }
+
+    //     // target.value = formatTelephoneNumber(simplest.value.slice(0, simplest.value.length - 1)).value;
+
+    //     // setTimeout(() => {
+    //     //     console.log('setSelectionRange (del)');
+    //     //     target.setSelectionRange(target.selectionStart, target.selectionStart);
+    //     // });
+    // }
+}
+
+/*
+    Functions:
+*/
+
+function isCharDigit(char) {
+    return char.length === 1 && '0' <= char && char <= '9';
+}
+
+function isDigit(string) {
+    return [...string].every(isCharDigit);
+}
+
+/**
+ * Delete not digit symbols from telephone number.
+ * @param {string} tel - tel. number.
+ * @param {number[]} breakpoints - breakpoints to count deleted symbols before breakpoint position.
+ */
+function makeTelephoneNumberSimplest(tel, breakpoints = []) {
+    let value = '';
+    const countOfDeletedSymbol = {};
+
+    for (const breakpoint of breakpoints) {
+        countOfDeletedSymbol[breakpoint] = 0;
+    }
+
+    for (const [i, char] of [...tel].entries()) {
+        if (isDigit(char)) {
+            value += char;
+        } else {
+            for (const breakpoint of breakpoints) {
+                if (i <= breakpoint) {
+                    countOfDeletedSymbol[breakpoint] += 1;
+                }
+            }
+        }
+    }
+
+    return {
+        value,
+        countOfDeletedSymbol
+    };
+}
+
+/**
+ * Format telephone number and get new cursor position.
+ */
+function formatTelephoneNumber(number, selectionStart, cursorAtEnd) {
+    console.log('formatTelephoneNumber()');
+
+    const PLACE_FOR_DIGIT = '_';
+
+    const simplest = makeTelephoneNumberSimplest(number, [selectionStart]);
+    number = simplest.value;
+
+    if (number === '') {
+        number = RU_TEL_CODE;
+    }
+
+    const mobilePhoneParts = [
+        ['+', RU_TEL_CODE],
+        [' ', '999'],
+        [' ', '123'],
+        ['-', '45'],
+        ['-', '67']
+    ];
+
+    let start = 0;
+    let value = '';
+    // let previousPartIsComplete;
+    let cursorPos;
+    let cursorShift = 0;
+    let previousIsComplete = false;
+
+    for (const [prefix, { length }] of mobilePhoneParts) {
+        const part = number.slice(start, start += length);
+        const partWithPrefix = prefix + part;
+        // console.log(`part = ${part}`);
+
+        const emptyPlaces = length - part.length;
+        value += partWithPrefix + PLACE_FOR_DIGIT.repeat(emptyPlaces);
+
+        if (part || previousIsComplete) {
+            cursorPos = value.length - emptyPlaces;
+            console.log(`cursorPos = ${cursorPos}`);
+        }
+
+        if (!part && previousIsComplete) {
+            // NOTE: "start" in condition means "end". FIXME
+            cursorShift = prefix.length;
+            console.log(`cursorShift = ${cursorShift}`);
+        }
+        previousIsComplete = !emptyPlaces;
+
+        // if (part || previousPartIsComplete) {
+        // }
+
+        previousPartIsComplete = part.length === length;
+
+        // if (!part) {
+        //     break;
+        // }
+    }
+
+    if (!cursorAtEnd) {
+        cursorPos = Math.min(cursorPos, selectionStart + cursorShift);
+    }
+
+    return {
+        value,
+        cursorPos,
+        cursorShift
+    };
+}
+
+if (isEnvNode) {
+    module.exports = {
+        makeTelephoneNumberSimplest,
+        formatTelephoneNumber,
+    }
 }

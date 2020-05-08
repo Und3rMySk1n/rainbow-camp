@@ -874,7 +874,6 @@ img
 
 .docs .med .blur_bg {
     display: none;
-    z-index: -1;
 }
 
 .docs .med.detail_represent .blur_bg {

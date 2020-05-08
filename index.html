@@ -306,6 +306,7 @@
     <p class="photo_caption"><span class="photo_caption_title">Плавание.</span> Дети учатся плавать и купаются в жару.
       Всё — под контролем инструктора и вожатых</p>
   </div>
+  <div class="splash"></div>
 </div>
 
 <div class="content_wrapper music_section">
@@ -545,8 +546,11 @@
         </p>
       </div>
       <div class="docs">
-        <img src="images/doc.png" class="doc_image" alt="">
-        <a href="#" class="doc_link">Справка 079у</a>
+        <div class="med" onclick="this.classList.toggle('detail_represent')">
+          <img src="images/med-certificate.jpg" class="doc_image" alt="">
+          <a href="#" class="doc_link">Справка 079у</a>
+          <div class="blur_bg" onclick="this.classList.add('detail_represent')"></div>
+        </div>
       </div>
     </div>
   </div>
@@ -572,6 +576,7 @@
     Перезвоним в рабочее время в течение часа
   </p>
   <img src="images/jumping-girl.png" alt="" class="form_image">
+  <div class="jumping_girl_shadow"></div>
 </div>
 
 <div class="content_wrapper footer_section">

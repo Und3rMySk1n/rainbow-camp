@@ -542,12 +542,23 @@ img
 /* Activities */
 .activities_section
 {
+    position: relative;
     margin-bottom: 62px;
 }
 
 .activities_section .photo_caption_wrapper
 {
     margin-bottom: 49px;
+}
+
+.activities_section .splash
+{
+    position: absolute;
+    width: 593px;
+    height: 438px;
+    bottom: -72px;
+    left: -218px;
+    background: url('../images/splash.png') no-repeat;
 }
 
 /* Music */
@@ -842,11 +853,43 @@ img
     padding-top: 6px;
 }
 
-.docs .doc_image
+.docs .med .doc_image
 {
     display: block;
+    width: 140px;
+    height: 197px;
     border: 1px solid #e1e1e1;
     margin-bottom: 5px;
+}
+
+.docs .med.detail_represent .doc_image {
+    position: fixed;
+    height: 90%;
+    width: 90%;
+    top: 5%;
+    left: 5%;
+    object-fit: contain;
+    border: none;
+}
+
+.docs .med .blur_bg {
+    display: none;
+    z-index: -1;
+}
+
+.docs .med.detail_represent .blur_bg {
+    display: initial;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(2px);
+}
+
+.docs .med.detail_represent .doc_link {
+    display: none;
 }
 
 .docs .doc_link,
@@ -987,6 +1030,15 @@ img
 .order_section .form_notice
 {
     width: 226px;
+}
+
+.order_section .jumping_girl_shadow {
+    position: absolute;
+    width: 430px;
+    height: 167px;
+    right: -225px;
+    bottom: -265px;
+    background: url(../images/jumping-girl-shadow.png);
 }
 
 .form_image

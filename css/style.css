@@ -975,7 +975,7 @@ img
 .order_section .content_title,
 .order_section .content_text,
 .order_section .order_features_list li,
-.order_section .submit_button,
+.order_section .submit_button *,
 .order_section .form_notice
 {
     color: #fff;
@@ -1013,6 +1013,36 @@ img
     border: none;
     font-size: 18px;
     margin-bottom: 10px;
+}
+
+.order_form .submit_button:disabled
+{
+    cursor: initial;
+}
+
+.order_form .content_loading,
+.order_form .content_completed,
+.order_form.loading .content_default,
+.order_form.completed .content_default
+{
+    display: none;
+}
+
+.order_form.loading .content_loading,
+.order_form.completed .content_completed
+{
+    display: initial;
+}
+
+.order_form .submit_button:hover,
+.order_form .submit_button:focus
+{
+    background: #0056B3;
+}
+
+.order_form.completed .submit_button
+{
+    background: #6C19FF;
 }
 
 .order_form .form_input

@@ -23,6 +23,9 @@ const VIDEOS = [
 ];
 
 if (isEnvBrowser) {
+    /*
+        Custom play buttons and posters for videos
+    */
     const videos = VIDEOS
         .map( video => ({
             ...video, domElement: document.querySelector(`.${video.sectionClassName} .${CLASS_VIDEO_WRAPPER}`)
@@ -44,6 +47,9 @@ if (isEnvBrowser) {
         domElement.classList.add(CLASS_CUSTOM_PLAY_BUTTON);
     }
     
+    /*
+        Mask for input element for tel. number
+    */
     for (const input of document.querySelectorAll('.form_input[name="phone"]')) {
         input.addEventListener('input', formatTelephoneNumberInput);
         input.addEventListener('keypress', formatTelephoneNumberInput);
@@ -70,6 +76,45 @@ if (isEnvBrowser) {
             console.log();
             console.dir(event);
             console.dir(event.target.value);
+        });
+    }
+
+    /*
+        Form
+    */
+    const CLASS_LOADING = 'loading';
+    const CLASS_COMPLETED = 'completed';
+
+    for (const form of document.querySelectorAll('form')) {
+        form.addEventListener('submit', event => {
+            event.preventDefault();
+
+            const form = event.target;
+            const { action: url, method } = form;
+            const data = {};
+
+            for (const input of document.querySelectorAll('input')) {
+                data[input.name] = input.value;
+            }
+
+            const fetchWorker = new Worker('js/fetch-worker.js');
+            // Worker is needed to prevent redirection on fetch response
+            // FIXME: try iframe instead.
+
+            form.classList.add(CLASS_LOADING);
+            form.querySelector('button[type="submit"]').disabled = true;
+            
+            fetchWorker.onmessage = (e) => {
+                const { data: { completed } } = e;
+                // "completed" don't means success
+                
+                form.classList.remove(CLASS_LOADING);
+                if (completed) {
+                    form.classList.add(CLASS_COMPLETED);
+                }
+            };
+
+            fetchWorker.postMessage({ url, method, data });
         });
     }
 }

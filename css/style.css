@@ -17,7 +17,8 @@ img
     max-width: 100%;
 }
 
-.not_underlined {
+.not_underlined
+{
     text-decoration: none;
 }
 
@@ -853,7 +854,8 @@ img
     padding-top: 6px;
 }
 
-.docs .med {
+.docs .med
+{
     cursor: pointer;
 }
 
@@ -866,11 +868,13 @@ img
     margin-bottom: 5px;
 }
 
-.docs .med.detail_represent * {
+.docs .med.detail_represent *
+{
     z-index: 10;
 }
 
-.docs .med.detail_represent .doc_image {
+.docs .med.detail_represent .doc_image
+{
     position: fixed;
     height: 90%;
     width: 90%;
@@ -880,11 +884,13 @@ img
     border: none;
 }
 
-.docs .med .blur_bg {
+.docs .med .blur_bg
+{
     display: none;
 }
 
-.docs .med.detail_represent .blur_bg {
+.docs .med.detail_represent .blur_bg
+{
     display: initial;
     position: fixed;
     width: 100%;
@@ -895,7 +901,8 @@ img
     backdrop-filter: blur(2px);
 }
 
-.docs .med.detail_represent .doc_link {
+.docs .med.detail_represent .doc_link
+{
     display: none;
 }
 
@@ -1069,7 +1076,8 @@ img
     width: 226px;
 }
 
-.order_section .jumping_girl_shadow {
+.order_section .jumping_girl_shadow
+{
     position: absolute;
     width: 430px;
     height: 167px;
@@ -1195,4 +1203,87 @@ img
     margin-top: -62px;
     margin-left: -98px;
     max-width: none;
+}
+
+@media screen and (min-width: 1200px)
+{
+    .main_info_section
+    {
+        margin-top: -61px;
+    }
+
+    .main_info_section.content_wrapper
+    {
+        max-width: 1196px;
+    }
+
+    .main_info_section .content_title
+    {
+        font-size: 48px;
+        margin-bottom: 33px;
+    }
+
+    .main_info_section .content_text
+    {
+        font-size: 26px;
+        line-height: 33px;
+        margin-bottom: 33px;
+    }
+
+    .main_info_section .text_part
+    {
+        max-width: 854px;
+    }
+
+    .notice_15_minutes
+    {
+        width: 230px;
+    }
+
+    .notice_15_minutes img
+    {
+        margin-top: -13px;
+    }
+
+    .notice_15_minutes .minutes_text
+    {
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .notice_15_minutes .trip_details_text
+    {
+        font-size: 23px;
+        line-height: 29px;
+    }
+
+    .top_block_video
+    {
+        margin-top: 37px;
+    }
+
+    .main_info_section .video_wrapper
+    {
+        width: 1156px;
+        height: 650px;
+    }
+
+    .main_info_section .video_caption
+    {
+        font-size: 23px;
+        line-height: 29px;
+        margin-top: 10px;
+    }
+
+    .main_info_section .play_button
+    {
+        width: 192px;
+        height: 192px;
+        background: url(../images/play-button-wide.svg);
+    }
+
+    .main_info_section .video_duration
+    {
+        font-size: 28px;
+    }
 }

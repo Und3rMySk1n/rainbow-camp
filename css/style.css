@@ -17,6 +17,11 @@ img
     max-width: 100%;
 }
 
+.block_image
+{
+    display: block;
+}
+
 .not_underlined
 {
     text-decoration: none;
@@ -132,7 +137,7 @@ img
 {
     font-size: 16px;
     line-height: 20px;
-    margin-top: 8px;
+    margin-top: 7px;
 }
 
 .block_with_background

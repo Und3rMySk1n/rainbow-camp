@@ -1059,6 +1059,40 @@ img
     background: #6C19FF;
 }
 
+.input_tooltip_container
+{
+    position: relative;
+}
+
+.order_form .input_tooltip
+{
+    display: none;
+    position: absolute;
+    top: -50px;
+    height: auto;
+    padding: 6px 12px;
+    width: auto;
+    background: white;
+    border-radius: 5px;
+}
+
+.order_form .input_tooltip::after
+{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+}
+
+.order_form .input_tooltip.visible
+{
+    display: inline;
+}
+
 .order_form .form_input
 {
     line-height: 54px;
@@ -1215,4 +1249,87 @@ img
     margin-top: -30px;
     margin-left: -98px;
     max-width: none;
+}
+
+@media screen and (min-width: 1200px)
+{
+    .main_info_section
+    {
+        margin-top: -61px;
+    }
+
+    .main_info_section.content_wrapper
+    {
+        max-width: 1196px;
+    }
+
+    .main_info_section .content_title
+    {
+        font-size: 48px;
+        margin-bottom: 33px;
+    }
+
+    .main_info_section .content_text
+    {
+        font-size: 26px;
+        line-height: 33px;
+        margin-bottom: 33px;
+    }
+
+    .main_info_section .text_part
+    {
+        max-width: 854px;
+    }
+
+    .notice_15_minutes
+    {
+        width: 230px;
+    }
+
+    .notice_15_minutes img
+    {
+        margin-top: -13px;
+    }
+
+    .notice_15_minutes .minutes_text
+    {
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .notice_15_minutes .trip_details_text
+    {
+        font-size: 23px;
+        line-height: 29px;
+    }
+
+    .top_block_video
+    {
+        margin-top: 37px;
+    }
+
+    .main_info_section .video_wrapper
+    {
+        width: 1156px;
+        height: 650px;
+    }
+
+    .main_info_section .video_caption
+    {
+        font-size: 23px;
+        line-height: 29px;
+        margin-top: 10px;
+    }
+
+    .main_info_section .play_button
+    {
+        width: 192px;
+        height: 192px;
+        background: url(../images/play-button-wide.svg);
+    }
+
+    .main_info_section .video_duration
+    {
+        font-size: 28px;
+    }
 }

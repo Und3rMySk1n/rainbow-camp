@@ -2,7 +2,8 @@ const isEnvBrowser = typeof window !== 'undefined';
 const isEnvNode = !isEnvBrowser && module && module.exports;
 
 // const NEGLIGIBLE_SYMBOLS = '+- _';
-const RU_TEL_CODE = '7';
+const TEL_CODE_RU = '7';
+const TEL_CODE_MARI_EL = '8362';
 const telCode = (code) => `+${code}`;
 
 const CLASS_VIDEO_WRAPPER = 'video_wrapper';
@@ -50,14 +51,14 @@ if (isEnvBrowser) {
     /*
         Mask for input element for tel. number
     */
-    for (const input of document.querySelectorAll('.form_input[name="phone"]')) {
+    for (const input of document.querySelectorAll('.form_input[type="tel"]')) {
         input.addEventListener('input', formatTelephoneNumberInput);
         input.addEventListener('keypress', formatTelephoneNumberInput);
         input.addEventListener('focus', formatTelephoneNumberInput);
         input.addEventListener('selectionchange', formatTelephoneNumberInput);
 
         input.addEventListener('blur', ({ target }) => {
-            if (makeTelephoneNumberSimplest(target.value).value === RU_TEL_CODE) {
+            if (makeTelephoneNumberSimplest(target.value).value === TEL_CODE_RU) {
                 target.value = '';
             }
         });
@@ -119,6 +120,33 @@ if (isEnvBrowser) {
     }
 }
 
+/**
+ * Format a telephone number in the input field.
+ * 
+ * Как работает маска телефона:
+ * 
+ * Начальное «+7» зафиксировано и его нельзя удалить
+ * 
+ * Пользователь нажал Backspace
+ *     Тултип: «Вы хотите ввести городской номер Марий Эл?»
+ *         да => Дописать код города 8362
+ *         нет => Извините. Мы сможем позвонить только на российский номер.
+ * 
+ * Ввёл «9» -> «+7 9__ ___-__-__»
+ *     Код оператора (единственное исключение - какой-то остров с кодом 90 и населением 900 человек)
+ * 
+ * Ввёл «2» -> «+7 2_»
+ *     Городской телефон. Отбиваем только последние 6 цифр дефисами по парам, так как не знаем длину кода города * 
+ * Ввёл «8362» -> «+7 (8362) __-__-__»
+ *     Такой код городского номера мы знаем. Это Республика Марий Эл.
+ * 
+ * Ввёл «912345» -> «+7 912 345-__-__»
+ *     Не понятно, это незаконченный сотовый, или пользователь не заметил +7
+ *     Тултип после короткой паузы: «Вы ввели городской номер Марий Эл?»
+ *         да => Дописать код города 8362
+ *         нет => Это сотовый
+ *     ? Пауза длиннее средней паузы между набором цифр
+ */
 function formatTelephoneNumberInput(event) {
     console.log('formatTelephoneNumberInput()');
     
@@ -307,11 +335,11 @@ function formatTelephoneNumber(number, selectionStart, cursorAtEnd) {
     number = simplest.value;
 
     if (number === '') {
-        number = RU_TEL_CODE;
+        number = TEL_CODE_RU;
     }
 
     const mobilePhoneParts = [
-        ['+', RU_TEL_CODE],
+        ['+', TEL_CODE_RU],
         [' ', '999'],
         [' ', '123'],
         ['-', '45'],

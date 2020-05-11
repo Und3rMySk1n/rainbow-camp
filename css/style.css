@@ -147,7 +147,7 @@ img
     width: 910px;
     top: 49px;
     left: 50%;
-    transform: translateX(-8.7%);
+    transform: translateX(-7.4%);
     z-index: -1;
 }
 
@@ -165,9 +165,9 @@ img
 {
     position: absolute;
     width: 1086px;
-    top: -12px;
+    top: -2px;
     left: 50%;
-    transform: translateX(-16%);
+    transform: translateX(-15%);
     z-index: -1;
 }
 
@@ -185,7 +185,7 @@ img
 {
     font-size: 16px;
     line-height: 20px;
-    margin-top: 6px;
+    margin-top: 7px;
 }
 
 .photo_caption.application_caption
@@ -219,7 +219,7 @@ img
 /* Main info */
 .main_info_section
 {
-    margin-top: -27px;
+    margin-top: -21px;
     margin-bottom: 94px;
 }
 
@@ -246,6 +246,7 @@ img
 {
     width: 160px;
     flex-shrink: 0;
+    margin-top: -7px;
 }
 
 .notice_15_minutes .fifteen_minutes
@@ -274,7 +275,7 @@ img
 /* Different shifts */
 .shifts_section
 {
-    padding-bottom: 44px;
+    padding-bottom: 55px;
 }
 
 .different_shifts
@@ -294,7 +295,7 @@ img
 {
     width: 340px;
     margin-right: 20px;
-    padding-top: 70px;
+    padding-top: 65px;
 }
 
 .details_with_photo .photo_wrapper
@@ -323,7 +324,7 @@ img
 .details_with_photo.dancing .details_wrapper
 {
     margin-right: 0;
-    padding-top: 91px;
+    padding-top: 88px;
 }
 
 .details_with_photo.dancing .photo_wrapper
@@ -335,13 +336,13 @@ img
 .friendship_section
 {
     padding-top: 137px;
-    margin-top: -160px;
-    margin-bottom: 46px;
+    margin-top: -170px;
+    margin-bottom: 31px;
 }
 
 .friendship_section .details_wrapper
 {
-    width: 375px;
+    width: 380px;
 }
 
 /* Comfort */
@@ -451,6 +452,11 @@ img
     width: 298px;
 }
 
+.sticker_wrapper img
+{
+    max-width: none;
+}
+
 /* Adventures */
 .adventures_section
 {
@@ -482,10 +488,10 @@ img
 
 .adventures_section .notice_image
 {
-    margin-top: -21px;
+    margin-top: -32px;
     max-width: none;
-    margin-left: -2px;
-    margin-bottom: 39px;
+    margin-left: -17px;
+    margin-bottom: -3px;
 }
 
 .adventures_section .notice_title
@@ -557,8 +563,8 @@ img
     position: absolute;
     width: 593px;
     height: 438px;
-    bottom: -72px;
-    left: -218px;
+    bottom: -70px;
+    left: -203px;
     background: url('../images/splash.png') no-repeat;
 }
 
@@ -593,7 +599,8 @@ img
 
 .music_section .cartoons img
 {
-    margin: 21px 0 26px -8px;
+    margin: -10px 0 -11px -56px;
+    max-width: none;
 }
 
 .music_section .cartoons .photo_caption
@@ -611,10 +618,10 @@ img
 .lego
 {
     position: absolute;
-    width: 376px;
-    height: 346px;
-    bottom: -30px;
-    right: -169px;
+    width: 398px;
+    height: 409px;
+    bottom: -87px;
+    right: -186px;
     background: url('../images/lego.png') no-repeat;
 }
 
@@ -1123,15 +1130,14 @@ img
 .form_image
 {
     position: absolute;
-    top: -94px;
-    right: -40px;
+    top: -109px;
+    right: -87px;
 }
 
 /* Footer */
 .footer_section
 {
     display: flex;
-    justify-content: space-between;
     padding: 19px 20px 50px;
 }
 
@@ -1143,8 +1149,7 @@ img
 
 .developers
 {
-    flex-grow: 1;
-    width: 284px;
+    width: 299px;
     margin-right: 20px;
 }
 
@@ -1186,6 +1191,13 @@ img
     color: #0072DB;
 }
 
+.vk_link
+{
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+
 /* Absolute images */
 .shifted_image_block
 {
@@ -1197,13 +1209,13 @@ img
     width: 156px;
     position: absolute;
     transform: rotate(-19deg);
-    top: 127px;
-    left: 203px;
+    top: 140px;
+    left: 201px;
 }
 
 .belt_image
 {
-    margin-top: 29px;
+    margin-top: 47px;
     margin-left: -53px;
 }
 
@@ -1212,13 +1224,13 @@ img
     width: 165px;
     transform: rotate(-19deg);
     position: absolute;
-    top: 136px;
+    top: 172px;
     left: 33px;
 }
 
 .dress_image
 {
-    margin-top: -87px;
+    margin-top: -51px;
     margin-left: 127px;
     max-width: none;
 }
@@ -1228,13 +1240,13 @@ img
     width: 146px;
     transform: rotate(-19deg);
     position: absolute;
-    top: 62px;
+    top: 93px;
     left: 75px;
 }
 
 .national_belt_image
 {
-    margin-top: -62px;
+    margin-top: -30px;
     margin-left: -98px;
     max-width: none;
 }

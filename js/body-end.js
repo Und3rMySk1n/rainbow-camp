@@ -15,7 +15,7 @@ const CLASS_VIDEO_FRAME = 'video_frame';
 const VIDEOS = [
     {
         sectionClassName: 'main_info_section',
-        poster: 'images/video/sport-wide.jpg'
+        poster: 'images/video/sport.jpg'
     },
     {
         sectionClassName: 'dancing_section',

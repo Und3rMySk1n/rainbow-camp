@@ -1052,6 +1052,40 @@ img
     background: #6C19FF;
 }
 
+.input_tooltip_container
+{
+    position: relative;
+}
+
+.order_form .input_tooltip
+{
+    display: none;
+    position: absolute;
+    top: -50px;
+    height: auto;
+    padding: 6px 12px;
+    width: auto;
+    background: white;
+    border-radius: 5px;
+}
+
+.order_form .input_tooltip::after
+{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+}
+
+.order_form .input_tooltip.visible
+{
+    display: inline;
+}
+
 .order_form .form_input
 {
     line-height: 54px;

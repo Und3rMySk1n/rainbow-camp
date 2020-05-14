@@ -27,9 +27,10 @@ img
     text-decoration: none;
 }
 
-.indivisible_text
+.nobr
 {
     display: inline-block;
+    color: inherit;
 }
 
 .content_wrapper
@@ -190,7 +191,7 @@ img
 {
     font-size: 16px;
     line-height: 20px;
-    margin-top: 7px;
+    margin-top: 8px;
 }
 
 .photo_caption.application_caption
@@ -640,7 +641,7 @@ img
 .teachers_section .teacher_name,
 .teachers_section .photo_caption,
 .teachers_section .photo_caption_title,
-.teachers_section .indivisible_text
+.teachers_section .nobr
 {
     color: #fff;
 }
@@ -766,7 +767,7 @@ img
 .map_section
 {
     max-width: 880px;
-    padding: 42px 40px 35px;
+    padding: 43px 40px 38px;
     position: relative;
     background: linear-gradient(132.16deg, rgba(255, 189, 109, 0.8) -5.96%, rgba(255, 228, 132, 0.8) 99.46%);
     margin: 0 auto 104px;
@@ -788,8 +789,8 @@ img
 
 .map_wrapper
 {
-    margin-top: 30px;
-    margin-bottom: 17px;
+    margin-top: 45px;
+    margin-bottom: 20px;
 }
 
 .map_details
@@ -859,11 +860,6 @@ img
 .docs
 {
     padding-top: 6px;
-}
-
-.docs .med
-{
-    cursor: pointer;
 }
 
 .docs .med .doc_image
@@ -1114,7 +1110,7 @@ img
 
 .order_section .form_notice
 {
-    width: 226px;
+    width: 310px;
 }
 
 .order_section .jumping_girl_shadow
@@ -1157,9 +1153,9 @@ img
 .copyright span
 {
     font-size: 14px;
-    line-height: 18px;
+    line-height: 19px;
     color: #0072DB;
-    margin: 0;
+    margin: 0 0 3px;
 }
 
 .phone
@@ -1168,6 +1164,7 @@ img
     margin: 0 0 3px;
     font-size: 16px;
     line-height: 18px;
+    color: black;
 }
 
 .call_details

@@ -22,6 +22,11 @@ img
     display: block;
 }
 
+.small_spot_image
+{
+    display: none;
+}
+
 .not_underlined
 {
     text-decoration: none;
@@ -105,8 +110,8 @@ img
 .main_info_section .video_wrapper,
 .dancing_section .video_wrapper
 {
-    width: 800px;
-    height: 450px;
+    max-width: 800px;
+    padding-bottom: 56.25%;
 }
 
 .video_wrapper .video_frame,
@@ -144,6 +149,11 @@ img
 {
     overflow-x: hidden;
     position: relative;
+}
+
+.block_with_background.girl_jumping_wrapper
+{
+    overflow-y: hidden;
 }
 
 .blue_spot
@@ -790,6 +800,15 @@ img
 {
     margin-top: 30px;
     margin-bottom: 17px;
+    padding-bottom: 70%;
+    position: relative;
+}
+
+.map_wrapper iframe
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
 }
 
 .map_details
@@ -1249,4 +1268,474 @@ img
     margin-top: -30px;
     margin-left: -98px;
     max-width: none;
+}
+
+@media screen and (max-width: 1000px)
+{
+    .lego
+    {
+        display: none;
+    }
+
+    .small_orange_spot,
+    .small_purple_spot
+    {
+        display: none;
+    }
+
+    .adventures_section .notice_image
+    {
+        max-width: 120%;
+    }
+
+    .comfort_section
+    {
+        margin-bottom: 100px;
+    }
+}
+
+@media screen and (max-width: 920px)
+{
+    .teachers_section .photo_caption
+    {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .leader_name,
+    .teacher_name
+    {
+        display: none;
+    }
+
+    .music_section .cartoons img
+    {
+        margin: 0 0 -10px -10px;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 880px)
+{
+    .teachers_section .leader_description
+    {
+        width: 185px;
+    }
+
+    .teachers_section .teacher_description
+    {
+        right: 45px;
+        width: 175px;
+    }
+
+    .painting_section .theater
+    {
+        margin-top: 100px;
+    }
+
+    .sticker_wrapper
+    {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 860px)
+{
+    .photo_caption.limited_width
+    {
+        width: 100%;
+    }
+
+    .details_with_photo,
+    .details_with_photo.dancing
+    {
+        margin-top: 12px;
+    }
+
+    .shifted_image_block
+    {
+        display: none;
+    }
+
+    .friendship_section
+    {
+        padding-top: 60px;
+        margin-top: 0;
+    }
+
+    .adventures_section
+    {
+        margin-bottom: 35px;
+    }
+
+    .adventures_section .description
+    {
+        width: 580px;
+        margin-right: 30px;
+    }
+
+    .adventures_section .notice
+    {
+        width: 240px;
+    }
+
+    .adventures_section .notice_image
+    {
+        max-width: 100%;
+        margin-bottom: 24px;
+    }
+
+    .painting_section .theater
+    {
+        margin-right: 0;
+    }
+
+    /* Spots */
+    .purple_spot
+    {
+        width: 750px;
+        top: -5px;
+    }
+
+    .yellow_spot
+    {
+        width: 853px;
+        top: -78px;
+        transform: translateX(-4%);
+    }
+}
+
+@media screen and (max-width: 720px)
+{
+    .painting_section .theater
+    {
+        margin-top: 150px;
+    }
+
+    .painting_section .theater .photo_caption
+    {
+        width: 205px;
+    }
+}
+
+@media screen and (max-width: 680px)
+{
+    .painting_section
+    {
+        flex-wrap: wrap;
+    }
+
+    .painting_section .theater
+    {
+        margin: 0;
+        width: 100%;
+        text-align: right;
+    }
+
+    .painting_section .theater .photo_caption
+    {
+        left: 0;
+        top: 100px;
+        width: 38%;
+        text-align: left;
+        max-width: 205px;
+    }
+}
+
+@media screen and (max-width: 640px)
+{
+    .shifted_image_block
+    {
+        display: block;
+        overflow: hidden;
+    }
+
+    .main_info_section
+    {
+        margin-top: 10px;
+        margin-bottom: 56px;
+    }
+
+    .play_button
+    {
+        width: 100px;
+        height: 100px;
+    }
+
+    .video_duration
+    {
+        font-size: 16px;
+    }
+
+    .details_with_photo .details_wrapper
+    {
+        width: 100%;
+        margin-right: 0;
+        max-width: 460px;
+        padding-top: 20px;
+    }
+
+    .details_with_photo .photo_wrapper
+    {
+        display: none;
+    }
+
+    .belt_image
+    {
+        margin-top: 26px;
+        margin-left: 0;
+        max-width: 50%;
+    }
+
+    .belt_description
+    {
+        top: 115px;
+        left: 45%;
+    }
+
+    .details_with_photo.dancing .details_wrapper
+    {
+        padding-top: 50px;
+    }
+
+    .dress_image
+    {
+        margin-top: -21px;
+        margin-left: -31px;
+        max-width: 87%;
+        transform: rotate(-32deg);
+    }
+
+    .dress_description
+    {
+        top: 150px;
+        left: 60%;
+    }
+
+    .national_belt_image
+    {
+        max-width: 100%;
+        margin-left: 0;
+    }
+
+    .national_belt_description
+    {
+        transform: rotate(-30deg);
+        top: 50px;
+        left: 128px;
+    }
+
+    .comfort_section
+    {
+        margin-bottom: 60px;
+    }
+
+    /* Spots */
+    .blue_spot
+    {
+        width: 710px;
+        top: 131px;
+        transform: translateX(6.6%);
+    }
+}
+
+@media screen and (max-width: 480px)
+{
+    .small_spot_image
+    {
+        display: block;
+    }
+
+    .big_spot_image
+    {
+        display: none;
+    }
+
+    .content_wrapper
+    {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .play_button
+    {
+        width: 60px;
+        height: 60px;
+    }
+
+    .video_duration
+    {
+        font-size: 9px;
+    }
+
+    .content_title
+    {
+        font-size: 21px;
+        line-height: 24px;
+        margin: 0 0 16px;
+    }
+
+    .content_text
+    {
+        font-size: 14px;
+        line-height: 19px;
+        margin: 0 0 13px;
+    }
+
+    .main_info_section
+    {
+        margin-top: 24px;
+        margin-bottom: 44px;
+    }
+
+    .block_with_notice
+    {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .notice_15_minutes .fifteen_minutes
+    {
+        margin-left: 23px;
+        margin-top: 7px;
+        width: 100px;
+    }
+
+    .notice_15_minutes .minutes_text,
+    .notice_15_minutes .trip_details_text
+    {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .top_block_video
+    {
+        margin-top: 32px;
+    }
+
+    .video_caption
+    {
+        font-size: 11px;
+        line-height: 14px;
+    }
+
+    .photo_caption
+    {
+        font-size: 11px;
+        line-height: 12px;
+        margin-top: 7px;
+    }
+
+    .content_title.block_title
+    {
+        margin: 0 0 12px;
+    }
+
+    .different_shifts
+    {
+        margin-bottom: 30px;
+    }
+
+    .details_with_photo .details_wrapper
+    {
+        padding-top: 14px;
+    }
+
+    .details_with_photo.dancing .details_wrapper
+    {
+        padding-top: 17px;
+    }
+
+    .dress_image
+    {
+        max-width: 80%;
+        margin-top: -13px;
+        margin-left: -35px;
+    }
+
+    .dress_description
+    {
+        left: 50%;
+        top: 110px;
+    }
+
+    .friendship_section
+    {
+        padding-top: 21px;
+    }
+
+    .block_with_background.friendship_section
+    {
+        overflow: hidden;
+    }
+
+    .national_belt_description
+    {
+        top: 38px;
+        left: 108px;
+    }
+
+    /* Spots */
+    .blue_spot
+    {
+        width: 458px;
+        top: 268px;
+        transform: translateX(-8.4%);
+    }
+
+    .yellow_spot
+    {
+        width: 807px;
+        top: -177px;
+        transform: translateX(-18%);
+    }
+}
+
+@media screen and (max-width: 440px)
+{
+    .belt_description
+    {
+        font-size: 11px;
+        line-height: 13px;
+        width: 140px;
+        top: 100px;
+    }
+
+    .dress_description
+    {
+        font-size: 11px;
+        line-height: 13px;
+        width: 114px;
+        left: 51%;
+        top: 80px;
+    }
+
+    .national_belt_description
+    {
+        font-size: 11px;
+        line-height: 13px;
+        width: 105px;
+        top: 49px;
+        left: 116px;
+    }
+}
+
+@media screen and (max-width: 420px)
+{
+    .national_belt_description
+    {
+        transform: none;
+        position: relative;
+        width: 150px;
+        top: -40px;
+        left: 50px;
+    }
+}
+
+@media screen and (max-width: 360px)
+{
+    .belt_description
+    {
+        top: 80px;
+    }
 }

@@ -1556,27 +1556,27 @@ img
 
     .play_button
     {
-        width: 60px;
-        height: 60px;
+        width: 75px;
+        height: 75px;
     }
 
     .video_duration
     {
-        font-size: 9px;
+        font-size: 12px;
     }
 
     .content_title
     {
-        font-size: 21px;
-        line-height: 24px;
-        margin: 0 0 16px;
+        font-size: 24px;
+        line-height: 30px;
+        margin: 0 0 20px;
     }
 
     .content_text
     {
-        font-size: 14px;
-        line-height: 19px;
-        margin: 0 0 13px;
+        font-size: 16px;
+        line-height: 21px;
+        margin: 0 0 17px;
     }
 
     .main_info_section
@@ -1595,14 +1595,14 @@ img
     {
         margin-left: 23px;
         margin-top: 7px;
-        width: 100px;
+        width: 110px;
     }
 
     .notice_15_minutes .minutes_text,
     .notice_15_minutes .trip_details_text
     {
-        font-size: 12px;
-        line-height: 16px;
+        font-size: 14px;
+        line-height: 18px;
     }
 
     .top_block_video
@@ -1612,14 +1612,14 @@ img
 
     .video_caption
     {
-        font-size: 11px;
-        line-height: 14px;
+        font-size: 14px;
+        line-height: 18px;
     }
 
     .photo_caption
     {
-        font-size: 11px;
-        line-height: 12px;
+        font-size: 14px;
+        line-height: 18px;
         margin-top: 7px;
     }
 
@@ -1690,18 +1690,22 @@ img
 
 @media screen and (max-width: 440px)
 {
+    .belt_description,
+    .dress_description,
+    .national_belt_description
+    {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
     .belt_description
     {
-        font-size: 11px;
-        line-height: 13px;
         width: 140px;
         top: 100px;
     }
 
     .dress_description
     {
-        font-size: 11px;
-        line-height: 13px;
         width: 114px;
         left: 51%;
         top: 80px;
@@ -1709,8 +1713,6 @@ img
 
     .national_belt_description
     {
-        font-size: 11px;
-        line-height: 13px;
         width: 105px;
         top: 49px;
         left: 116px;

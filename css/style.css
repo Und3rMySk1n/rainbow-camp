@@ -1610,16 +1610,15 @@ img
         margin-top: 32px;
     }
 
-    .video_caption
+    .video_caption,
+    .photo_caption
     {
-        font-size: 14px;
-        line-height: 18px;
+        font-size: 13px;
+        line-height: 16px;
     }
 
     .photo_caption
     {
-        font-size: 14px;
-        line-height: 18px;
         margin-top: 7px;
     }
 

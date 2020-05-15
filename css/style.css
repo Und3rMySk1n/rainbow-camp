@@ -576,9 +576,9 @@ img
     position: absolute;
     width: 593px;
     height: 438px;
-    bottom: -70px;
-    left: -203px;
-    background: url('../images/splash.png') no-repeat;
+    bottom: -109px;
+    left: -183px;
+    background: url('../images/splash-v2.png') no-repeat;
 }
 
 /* Music */
@@ -1233,8 +1233,8 @@ img
 
 .belt_image
 {
-    margin-top: 47px;
-    margin-left: -53px;
+    margin-top: 49px;
+    margin-left: -78px;
 }
 
 .dress_description
@@ -1249,7 +1249,7 @@ img
 .dress_image
 {
     margin-top: -51px;
-    margin-left: 127px;
+    margin-left: 129px;
     max-width: none;
 }
 
@@ -1264,7 +1264,7 @@ img
 
 .national_belt_image
 {
-    margin-top: -30px;
+    margin-top: -29px;
     margin-left: -98px;
     max-width: none;
 }

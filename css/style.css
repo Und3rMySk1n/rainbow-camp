@@ -157,6 +157,7 @@ img
 .block_with_background.girl_jumping_wrapper
 {
     overflow-y: hidden;
+    background: url(../images/bg-footer.png) no-repeat bottom center;
 }
 
 .blue_spot
@@ -641,8 +642,7 @@ img
 /* Teachers */
 .teachers_section
 {
-    background: radial-gradient(106.82% 161.12% at 52.49% 19.11%, #FFAF25 0%, #FF9516 40.62%, #FF8A00 100%);
-    padding-top: 59px;
+    background: url('../images/bg-teachers.png') no-repeat bottom center;
     margin-bottom: 106px;
 }
 
@@ -658,45 +658,60 @@ img
     color: #fff;
 }
 
+.teachers_section .content_title
+{
+    position: absolute;
+    top: 152px;
+    left: 61px;
+    line-height: 37px;
+}
+
 .teachers_section .leader_description
 {
     position: absolute;
-    left: 21px;
-    top: 89px;
-    width: 210px;
+    top: 347px;
+    left: 61px;
+    width: 235px;
 }
 
 .teachers_section .leader_name
 {
     position: absolute;
-    left: 20px;
-    bottom: 30px;
+    left: 61px;
+    bottom: 32px;
 }
 
 .teachers_section .teacher_description
 {
     position: absolute;
-    right: -5px;
-    top: 89px;
+    right: 75px;
+    top: 347px;
     width: 212px;
 }
 
 .teachers_section .teacher_name
 {
     position: absolute;
-    right: -2px;
-    bottom: 30px;
+    width: 210px;
+    right: 77px;
+    bottom: 32px;
 }
 
 .teachers_section .content_wrapper
 {
     position: relative;
+    max-width: 1280px;
+    height: 721px;
+    padding: 0;
+    /* background: url('../images/bg-teachers.png') no-repeat -300px; */
 }
 
 .teachers_photo
 {
+    position: absolute;
+    bottom: 0;
     display: block;
-    margin: 38px auto 0;
+    margin: 0 348px;
     transform: translateX(-5px);
 }
 
@@ -717,7 +732,7 @@ img
 {
     display: flex;
     justify-content: space-between;
-    margin-top: 50px;
+    margin-top: 61px;
 }
 
 .safety_feature_title
@@ -750,28 +765,30 @@ img
 
 .mosquito_icon
 {
-    width: 72px;
-    height: 71px;
-    background: url('../images/icon-mosquito.svg') no-repeat;
-    margin-bottom: 24px;
+    width: 132px;
+    height: 131px;
+    background: url('../images/icon-mosquito.png') no-repeat;
+    margin-bottom: 18px;
     margin-left: -4px;
 }
 
 .first_aid_icon
 {
-    width: 88px;
-    height: 69px;
-    background: url('../images/icon-first-aid-post.svg') no-repeat;
-    margin-bottom: 25px;
+    width: 129px;
+    height: 130px;
+    background: url('../images/icon-first-aid-post.png') no-repeat;
+    margin-top: 1px;
+    margin-bottom: 18px;
     margin-left: -7px;
 }
 
 .guard_icon
 {
-    width: 88px;
-    height: 57px;
-    background: url('../images/icon-guard.svg') no-repeat;
-    margin: 12px 0 25px;
+    width: 135px;
+    height: 129px;
+    background: url('../images/icon-guard.png') no-repeat;
+    margin-top: 2px;
+    margin-bottom: 18px;
     margin-left: -2px;
 }
 
@@ -863,7 +880,7 @@ img
 /* FAQ */
 .faq_section
 {
-    margin-bottom: 108px;
+    margin-bottom: 290px;
 }
 
 .questions_and_docs
@@ -997,9 +1014,9 @@ img
 .order_section
 {
     max-width: 880px;
-    margin: 0 auto 100px;
-    padding: 43px 39px 40px;
-    background: linear-gradient(139.75deg, #FF8A00 35.21%, #FFAF25 89.67%);
+    margin: 0 auto 227px;
+    padding: 0 39px;
+    /* background: linear-gradient(139.75deg, #FF8A00 35.21%, #FFAF25 89.67%); */
     position: relative;
 }
 
@@ -1023,7 +1040,7 @@ img
 {
     list-style: none;
     max-width: 325px;
-    margin-bottom: 83px;
+    margin-bottom: 69px;
 }
 
 .order_section .order_features_list li
@@ -1147,8 +1164,8 @@ img
 .form_image
 {
     position: absolute;
-    top: -109px;
-    right: -87px;
+    top: -212px;
+    right: -127px;
 }
 
 /* Footer */
@@ -1156,6 +1173,26 @@ img
 {
     display: flex;
     padding: 19px 20px 50px;
+}
+
+.footer_section *
+{
+    color: white;
+}
+
+.footer_section .link
+{
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.horizontal_line
+{
+    position: absolute;
+    width: 800px;
+    height: 1px;
+    margin-top: -19px;
+    background-color: white;
 }
 
 .phones_wrapper
@@ -1167,7 +1204,7 @@ img
 .developers
 {
     width: 299px;
-    margin-right: 20px;
+    margin-right: 148px;
 }
 
 .copyright,
@@ -1175,7 +1212,6 @@ img
 {
     font-size: 14px;
     line-height: 19px;
-    color: #0072DB;
     margin: 0 0 3px;
 }
 
@@ -1206,7 +1242,6 @@ img
 {
     font-size: 14px;
     line-height: 19px;
-    color: #0072DB;
 }
 
 .vk_link

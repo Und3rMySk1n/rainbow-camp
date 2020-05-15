@@ -460,7 +460,7 @@ img
 .food_menu_section .menu_wrapper
 {
     width: 100%;
-    margin-top: 10px;
+    margin-top: 24px;
 }
 
 .sticker_wrapper
@@ -531,13 +531,14 @@ img
 {
     width: 392px;
     margin-right: -24px;
+    z-index: 1;
 }
 
 .painting_section .theater
 {
     width: 490px;
     margin-left: -35px;
-    margin-top: -7px;
+    margin-top: 108px;
     margin-right: -25px;
     position: relative;
 }

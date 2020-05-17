@@ -502,7 +502,7 @@ img
 
 .adventures_section .notice_image
 {
-    margin-top: -32px;
+    margin-top: -39px;
     max-width: none;
     margin-left: -17px;
     margin-bottom: -3px;
@@ -583,7 +583,7 @@ img
     position: absolute;
     width: 593px;
     height: 438px;
-    bottom: -108px;
+    bottom: -109px;
     left: -181px;
     background: url('../images/splash-v2.png') no-repeat;
 }
@@ -770,7 +770,7 @@ img
     height: 131px;
     background: url('../images/icon-mosquito.png') no-repeat;
     margin-bottom: 18px;
-    margin-left: -4px;
+    margin-left: -6px;
 }
 
 .first_aid_icon
@@ -780,7 +780,7 @@ img
     background: url('../images/icon-first-aid-post.png') no-repeat;
     margin-top: 1px;
     margin-bottom: 18px;
-    margin-left: -7px;
+    margin-left: -6px;
 }
 
 .guard_icon
@@ -790,7 +790,7 @@ img
     background: url('../images/icon-guard.png') no-repeat;
     margin-top: 2px;
     margin-bottom: 18px;
-    margin-left: -2px;
+    margin-left: -6px;
 }
 
 /* Map */
@@ -1160,9 +1160,9 @@ img
 .order_section .jumping_girl_shadow
 {
     position: absolute;
-    width: 430px;
-    height: 167px;
-    right: -240px;
+    width: 566px;
+    height: 272px;
+    right: -302px;
     bottom: -293px;
     background: url(../images/jumping-girl-shadow.png);
 }
@@ -1255,6 +1255,7 @@ img
     display: inline-block;
     position: relative;
     z-index: 1;
+    right: -9px;
 }
 
 /* Absolute images */

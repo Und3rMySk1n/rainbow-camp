@@ -381,26 +381,26 @@ img
     max-width: 560px;
 }
 
-.small_orange_spot
+.small_blue_spot
 {
-    padding: 49px 47px 10px 92px;
-    width: 317px;
-    height: 312px;
-    background: url('../images/orange-spot.png') no-repeat;
+    padding: 60px 47px 10px 89px;
+    width: 328px;
+    height: 327px;
+    background: url('../images/blue-spot.png') no-repeat;
     position: absolute;
-    top: 33px;
-    right: -39px;
+    top: 22px;
+    right: -53px;
 }
 
-.small_purple_spot
+.small_orange_spot
 {
-    padding: 61px 58px 50px 81px;
-    width: 297px;
-    height: 303px;
-    background: url('../images/purple-spot.png') no-repeat;
+    padding: 74px 58px 50px 73px;
+    width: 305px;
+    height: 314px;
+    background: url('../images/orange-spot.png') no-repeat;
     position: absolute;
-    bottom: -140px;
-    left: 160px;
+    bottom: -139px;
+    left: 167px;
 }
 
 .icon_bottle
@@ -814,7 +814,7 @@ img
     font-size: 16px;
     line-height: 20px;
     color: #FFFFFF;
-    padding: 131px 32px 108px 80px;
+    padding: 123px 32px 108px 77px;
 }
 
 .map_wrapper
@@ -1217,14 +1217,14 @@ img
 .copyright span
 {
     font-size: 14px;
-    line-height: 19px;
+    line-height: 17px;
     margin: 0 0 3px;
 }
 
 .phone
 {
     display: block;
-    margin: 0 0 3px;
+    margin: 0 0 2px;
     font-size: 16px;
     line-height: 18px;
     color: black;
@@ -1562,8 +1562,8 @@ img
         display: none;
     }
 
-    .small_orange_spot,
-    .small_purple_spot
+    .small_blue_spot,
+    .small_orange_spot
     {
         display: none;
     }

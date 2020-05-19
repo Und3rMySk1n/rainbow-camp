@@ -23,8 +23,7 @@ img
 }
 
 .small_spot_image,
-.wide_photo_caption,
-.food_menu_small
+.wide_photo_caption
 {
     display: none;
 }
@@ -113,7 +112,6 @@ img
 .main_info_section .video_wrapper,
 .dancing_section .video_wrapper
 {
-    max-width: 800px;
     padding-bottom: 56.25%;
 }
 
@@ -407,7 +405,7 @@ img
 {
     width: 48px;
     height: 98px;
-    margin: 0 0 9px 59px;
+    margin: 0 0 9px 64px;
     background: url('../images/icon-bottle.svg') no-repeat;
 }
 
@@ -1336,6 +1334,11 @@ img
         margin: 0 0 27px;
     }
 
+    .details_wrapper .content_text
+    {
+        margin: 0 0 31px;
+    }
+
     .text_part
     {
         max-width: 735px;
@@ -1384,7 +1387,7 @@ img
     .photo_caption
     {
         font-size: 18px;
-        line-height: 25px;
+        line-height: 23px;
         margin-top: 8px;
     }
 
@@ -1412,7 +1415,7 @@ img
 
     .belt_image
     {
-        margin-top: 56px;
+        margin-top: 52px;
         margin-left: -97px;
     }
 
@@ -1421,7 +1424,7 @@ img
         font-size: 18px;
         line-height: 23px;
         width: 195px;
-        top: 174px;
+        top: 170px;
         left: 251px;
     }
 
@@ -1452,14 +1455,14 @@ img
 
     .dress_image
     {
-        margin-top: -61px;
+        margin-top: -66px;
         margin-left: 163px;
     }
 
     .dress_description
     {
         width: 206px;
-        top: 217px;
+        top: 214px;
         left: 59px;
         font-size: 18px;
         line-height: 23px;
@@ -1467,20 +1470,20 @@ img
 
     .friendship_section
     {
-        padding-top: 141px;
-        margin-bottom: 8px;
+        padding-top: 136px;
+        margin-bottom: 2px;
     }
 
     .national_belt_image
     {
-        margin-top: -65px;
+        margin-top: -44px;
         margin-left: -120px;
     }
 
     .national_belt_description
     {
         width: 182px;
-        top: 95px;
+        top: 118px;
         left: 97px;
         font-size: 18px;
         line-height: 23px;
@@ -1509,13 +1512,12 @@ img
 
     .small_orange_spot
     {
-        padding: 99px 59px 23px 160px;
-        width: 466px;
-        height: 469px;
-        background: url('../images/orange-spot-wide.png') no-repeat;
-        top: -15px;
-        right: -103px;
-
+        padding: 76px 59px 23px 104px;
+        width: 372px;
+        height: 372px;
+        background: url(../images/orange-spot-wide.png) no-repeat;
+        bottom: -168px;
+        left: 350px;
     }
 
     .small_purple_spot
@@ -1552,6 +1554,39 @@ img
     .comfort_section
     {
         margin-bottom: 254px;
+    }
+
+    .friendship_section .details_wrapper
+    {
+        width: 460px;
+        padding-top: 79px;
+    }
+
+    .small_blue_spot
+    {
+        padding: 71px 47px 10px 122px;
+        width: 407px;
+        height: 406px;
+        background: url(../images/blue-spot-wide.png) no-repeat;
+        top: 14px;
+        right: -80px;
+    }
+
+    .food_menu_section .description
+    {
+        width: 640px;
+    }
+
+    .sticker_wrapper
+    {
+        right: -16px;
+        top: -16px;
+        width: 407px;
+    }
+
+    .food_menu_section .menu_wrapper
+    {
+        margin-top: 28px;
     }
 }
 
@@ -2301,14 +2336,8 @@ img
         left: 108px;
     }
 
-    .food_menu_large
+    .food_menu_image
     {
-        display: none;
-    }
-
-    .food_menu_small
-    {
-        display: block;
         margin-top: 10px;
     }
 

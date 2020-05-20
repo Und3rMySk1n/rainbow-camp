@@ -1588,6 +1588,193 @@ img
     {
         margin-top: 28px;
     }
+
+    .adventures_section .description
+    {
+        width: 700px;
+    }
+
+    .adventures_section .notice
+    {
+        width: 220px;
+    }
+
+    .food_menu_section
+    {
+        margin-bottom: 119px;
+    }
+
+    .adventures_section .notice_image
+    {
+        margin-top: -65px;
+        margin-left: -30px;
+    }
+
+    .adventures_section .notice_description
+    {
+        font-size: 18px;
+        line-height: 23px;
+        margin-top: -37px;
+    }
+
+    .adventures_section
+    {
+        margin-bottom: 27px;
+    }
+
+    .reconstruction_section
+    {
+        margin-bottom: 57px;
+    }
+
+    .painting_section .painting
+    {
+        width: 490px;
+    }
+
+    .picture_frame
+    {
+        margin-bottom: 40px;
+    }
+
+    .photo_caption.application_caption
+    {
+        line-height: 23px;
+    }
+
+    .painting .photo_caption
+    {
+        max-width: 280px;
+    }
+
+    .painting_section .theater
+    {
+        margin-left: -95px;
+        margin-top: -17px;
+    }
+
+    .painting_section .theater .photo_caption
+    {
+        left: -21px;
+        bottom: 302px;
+        width: 310px;
+    }
+
+    .painting_section
+    {
+        margin-bottom: 11px;
+    }
+
+    .activities_section .splash
+    {
+        width: 575px;
+        height: 472px;
+        bottom: -27px;
+        left: -214px;
+        background: url(../images/splash-wide.png) no-repeat;
+    }
+
+    .activities_section
+    {
+        margin-bottom: 83px;
+    }
+
+    .music_section .music .photo_caption
+    {
+        width: 310px;
+    }
+
+    .music_section .music
+    {
+        width: 660px;
+    }
+
+    .music_section .music img
+    {
+        margin-left: -54px;
+        margin-top: 29px;
+    }
+
+    .music_section .cartoons
+    {
+        width: 302px;
+    }
+
+    .music_section .cartoons img
+    {
+        margin: -21px 0 12px -36px;
+    }
+
+    .lego
+    {
+        width: 498px;
+        height: 512px;
+        bottom: -115px;
+        right: -239px;
+        background: url(../images/lego-wide.png) no-repeat;
+    }
+
+    .block_with_background.robotics
+    {
+        margin-bottom: 12px;
+    }
+
+    .teachers_section .content_wrapper
+    {
+        max-width: 1540px;
+    }
+
+    .teachers_section
+    {
+        background: url(../images/bg-teachers-wide.jpg) no-repeat bottom center;
+        margin-bottom: 124px;
+    }
+
+    .teachers_section .content_title
+    {
+        top: 124px;
+        left: 61px;
+        line-height: 44px;
+    }
+
+    .teachers_section .photo_caption
+    {
+        font-size: 21px;
+        line-height: 27px;
+        margin-bottom: 26px;
+    }
+
+    .teachers_section .leader_description
+    {
+        top: 354px;
+        width: 290px;
+    }
+
+    .teachers_section .teacher_description
+    {
+        position: absolute;
+        right: 9px;
+        top: 353px;
+        width: 335px;
+    }
+
+    .leader_name,
+    .teacher_name
+    {
+        font-size: 18px;
+    }
+
+    .teachers_section .leader_name
+    {
+        bottom: 43px;
+    }
+
+    .teachers_section .teacher_name
+    {
+        width: 260px;
+        right: 79px;
+        bottom: 43px;
+    }
 }
 
 @media screen and (max-width: 1000px)

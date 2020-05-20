@@ -22,7 +22,6 @@ img
     display: block;
 }
 
-.small_spot_image,
 .wide_photo_caption
 {
     display: none;
@@ -896,14 +895,13 @@ img
 
 .docs
 {
+    width: 140px;
     padding-top: 6px;
 }
 
 .docs .med .doc_image
 {
     display: block;
-    width: 140px;
-    height: 197px;
     border: 1px solid #e1e1e1;
     margin-bottom: 5px;
 }
@@ -1588,6 +1586,484 @@ img
     {
         margin-top: 28px;
     }
+
+    .adventures_section .description
+    {
+        width: 700px;
+    }
+
+    .adventures_section .notice
+    {
+        width: 220px;
+    }
+
+    .food_menu_section
+    {
+        margin-bottom: 119px;
+    }
+
+    .adventures_section .notice_image
+    {
+        margin-top: -65px;
+        margin-left: -30px;
+    }
+
+    .adventures_section .notice_description
+    {
+        font-size: 18px;
+        line-height: 23px;
+        margin-top: -37px;
+    }
+
+    .adventures_section
+    {
+        margin-bottom: 27px;
+    }
+
+    .reconstruction_section
+    {
+        margin-bottom: 57px;
+    }
+
+    .painting_section .painting
+    {
+        width: 490px;
+    }
+
+    .picture_frame
+    {
+        margin-bottom: 40px;
+    }
+
+    .photo_caption.application_caption
+    {
+        line-height: 23px;
+    }
+
+    .painting .photo_caption
+    {
+        max-width: 280px;
+    }
+
+    .painting_section .theater
+    {
+        margin-left: -95px;
+        margin-top: -17px;
+    }
+
+    .painting_section .theater .photo_caption
+    {
+        left: -21px;
+        bottom: 302px;
+        width: 310px;
+    }
+
+    .painting_section
+    {
+        margin-bottom: 11px;
+    }
+
+    .activities_section .splash
+    {
+        width: 575px;
+        height: 472px;
+        bottom: -27px;
+        left: -214px;
+        background: url(../images/splash-wide.png) no-repeat;
+    }
+
+    .activities_section
+    {
+        margin-bottom: 83px;
+    }
+
+    .music_section .music .photo_caption
+    {
+        width: 310px;
+    }
+
+    .music_section .music
+    {
+        width: 660px;
+    }
+
+    .music_section .music img
+    {
+        margin-left: -54px;
+        margin-top: 29px;
+    }
+
+    .music_section .cartoons
+    {
+        width: 302px;
+    }
+
+    .music_section .cartoons img
+    {
+        margin: -21px 0 12px -36px;
+    }
+
+    .lego
+    {
+        width: 498px;
+        height: 512px;
+        bottom: -115px;
+        right: -239px;
+        background: url(../images/lego-wide.png) no-repeat;
+    }
+
+    .block_with_background.robotics
+    {
+        margin-bottom: 12px;
+    }
+
+    .teachers_section .content_wrapper
+    {
+        max-width: 1540px;
+    }
+
+    .teachers_section
+    {
+        background: url(../images/bg-teachers-wide.jpg) no-repeat bottom center;
+        margin-bottom: 124px;
+    }
+
+    .teachers_section .content_title
+    {
+        top: 124px;
+        left: 61px;
+        line-height: 44px;
+    }
+
+    .teachers_section .photo_caption
+    {
+        font-size: 21px;
+        line-height: 27px;
+        margin-bottom: 26px;
+    }
+
+    .teachers_section .leader_description
+    {
+        top: 354px;
+        width: 290px;
+    }
+
+    .teachers_section .teacher_description
+    {
+        position: absolute;
+        right: 9px;
+        top: 353px;
+        width: 335px;
+    }
+
+    .leader_name,
+    .teacher_name
+    {
+        font-size: 18px;
+    }
+
+    .teachers_section .leader_name
+    {
+        bottom: 43px;
+    }
+
+    .teachers_section .teacher_name
+    {
+        width: 260px;
+        right: 79px;
+        bottom: 43px;
+    }
+
+    .mosquito_icon
+    {
+        width: 161px;
+        height: 160px;
+        background: url(../images/icon-mosquito-wide.png) no-repeat;
+        margin-bottom: 21px;
+    }
+
+    .first_aid_icon
+    {
+        width: 158px;
+        height: 159px;
+        background: url(../images/icon-first-aid-post-wide.png) no-repeat;
+        margin-bottom: 21px;
+        margin-left: -8px;
+    }
+
+    .guard_icon
+    {
+        width: 165px;
+        height: 158px;
+        background: url(../images/icon-guard-wide.png) no-repeat;
+        margin-bottom: 21px;
+        margin-left: -8px;
+    }
+
+    .safety_feature_text, .safety_feature_title
+    {
+        font-size: 21px;
+        line-height: 27px;
+    }
+
+    .safety_features
+    {
+        margin-top: 68px;
+    }
+
+    .mosquito
+    {
+        width: 270px;
+        margin-right: 57px;
+    }
+
+    .first_aid
+    {
+        width: 323px;
+    }
+
+    .guard
+    {
+        width: 302px;
+    }
+
+    .safety_section
+    {
+        margin-bottom: 158px;
+    }
+
+    .map_section
+    {
+        max-width: 1100px;
+        padding: 57px 51px 54px;
+        margin: 0 auto 125px;
+    }
+
+    .map_wrapper
+    {
+        margin-top: 53px;
+        margin-bottom: 25px;
+    }
+
+    .map_details_name
+    {
+        font-size: 24px;
+        width: 196px;
+    }
+
+    .map_details_title
+    {
+        font-size: 18px;
+        line-height: 21px;
+        margin: 5px 0 0;
+    }
+
+    .map_details_subtitle
+    {
+        font-size: 18px;
+        line-height: 21px;
+        margin: 0 0 10px;
+    }
+
+    .by_car
+    {
+        width: 186px;
+    }
+
+    .by_bus
+    {
+        width: 230px;
+    }
+
+    .map_details_description
+    {
+        font-size: 13px;
+        line-height: 15px;
+    }
+
+    .question_title
+    {
+        font-size: 21px;
+        line-height: 27px;
+    }
+
+    .question_answer,
+    .list_item
+    {
+        font-size: 21px;
+        line-height: 29px;
+        margin: 0 0 29px;
+    }
+
+    .questions
+    {
+        width: 790px;
+    }
+
+    .docs
+    {
+        width: 164px;
+    }
+
+    .faq_section .content_title
+    {
+        margin-bottom: 33px;
+    }
+
+    .question_answer.last
+    {
+        margin: 0 0 48px;
+    }
+
+    .questions_list
+    {
+        padding-left: 76px;
+    }
+
+    .block_with_background.girl_jumping_wrapper
+    {
+        background: url(../images/bg-footer-wide.jpg) no-repeat bottom center;
+    }
+
+    .faq_section
+    {
+        margin-bottom: 359px;
+    }
+
+    .order_section
+    {
+        max-width: 1080px;
+        margin: 0 auto 300px;
+    }
+
+    .form_image
+    {
+        top: -243px;
+        right: -134px;
+    }
+
+    .order_section .content_title
+    {
+        margin-bottom: 28px;
+    }
+
+    .order_section .content_text
+    {
+        margin: 0;
+        font-size: 21px;
+        line-height: 27px;
+    }
+
+    .order_section .order_features_list
+    {
+        max-width: 390px;
+        margin-bottom: 96px;
+    }
+
+    .order_section .order_features_list li
+    {
+        margin-bottom: 9px;
+        font-size: 21px;
+        line-height: 27px;
+    }
+
+    .order_form .form_input,
+    .order_form .submit_button
+    {
+        line-height: 66px;
+        width: 388px;
+        font-size: 21px;
+        margin-bottom: 13px;
+        padding: 0 24px;
+    }
+
+    .order_section .form_notice
+    {
+        font-size: 18px;
+        width: 390px;
+    }
+
+    .horizontal_line
+    {
+        width: 1000px;
+        margin-top: -23px;
+    }
+
+    .copyright, .copyright span
+    {
+        font-size: 17px;
+        line-height: 22px;
+        margin: 0 0 1px;
+    }
+
+    .phones_wrapper
+    {
+        margin-right: 49px;
+        width: 300px;
+    }
+
+    .phone
+    {
+        margin: 0 0 2px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .call_details
+    {
+        font-size: 15px;
+    }
+
+    .developers
+    {
+        width: 360px;
+        margin-right: 203px;
+    }
+
+    .developers_list
+    {
+        font-size: 17px;
+        line-height: 22px;
+    }
+
+    .bureau
+    {
+        font-size: 17px;
+        line-height: 22px;
+    }
+
+    .map_section_spot
+    {
+        width: 378px;
+        height: 378px;
+        background: url(../images/red-spot-wide.png) no-repeat;
+        top: -65px;
+        right: 95px;
+        font-size: 18px;
+        line-height: 23px;
+        padding: 151px 32px 108px 123px;
+    }
+
+    .blue_spot
+    {
+        width: 1284px;
+        top: -34px;
+        transform: translateX(-8.5%);
+    }
+
+    .purple_spot
+    {
+        width: 1737px;
+        top: -49px;
+        transform: translateX(-72.0%);
+    }
+
+    .yellow_spot
+    {
+        width: 1408px;
+        top: -87px;
+        transform: translateX(-13.1%);
+    }
 }
 
 @media screen and (max-width: 1000px)
@@ -2160,16 +2636,6 @@ img
     .block_with_background.friendship_section
     {
         overflow-x: visible;
-    }
-
-    .small_spot_image
-    {
-        display: block;
-    }
-
-    .big_spot_image
-    {
-        display: none;
     }
 
     .content_wrapper

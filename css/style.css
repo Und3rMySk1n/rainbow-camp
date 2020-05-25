@@ -1438,7 +1438,7 @@ img
 
     .details_with_photo.dancing
     {
-        margin-top: -38px;
+        margin-top: -36px;
     }
 
     .details_with_photo.dancing .photo_wrapper
@@ -1714,7 +1714,7 @@ img
 
     .block_with_background.robotics
     {
-        margin-bottom: 12px;
+        margin-bottom: 0;
     }
 
     .teachers_section .content_wrapper
@@ -1726,6 +1726,8 @@ img
     {
         background: url(../images/bg-teachers-wide.jpg) no-repeat bottom center;
         margin-bottom: 124px;
+        padding-top: 40px;
+        margin-top: -27px;
     }
 
     .teachers_section .content_title

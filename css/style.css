@@ -820,6 +820,16 @@ img
     padding: 123px 32px 108px 77px;
 }
 
+.map_section_spot_mobile
+{
+    display: none;
+    background: url('../images/red-spot-mobile.png') no-repeat;
+    font-size: 13px;
+    line-height: 17px;
+    color: #ffffff;
+    padding: 20px 0 31px 32px;
+}
+
 .map_wrapper
 {
     margin-top: 45px;
@@ -1258,6 +1268,9 @@ img
     position: relative;
     z-index: 1;
     right: -9px;
+    width: 73px;
+    height: 73px;
+    background: url('../images/icon-vk.svg') no-repeat;
 }
 
 /* Absolute images */
@@ -2123,8 +2136,8 @@ img
     .teachers_section
     {
         background-position: top center;
-        padding-top: 220px;
-
+        padding-top: 250px;
+        background: url('../images/bg-teachers-medium.jpg');
     }
 
     .teachers_section_description
@@ -2411,6 +2424,16 @@ img
         display: none;
     }
 
+    .order_section
+    {
+        max-width: 600px;
+    }
+
+    .girl_jumping_wrapper .content_title
+    {
+        max-width: none;
+    }
+
     .jumping_girl_shadow
     {
         display: none;
@@ -2421,6 +2444,23 @@ img
         left: -30px;
         bottom: 150px;
         width: 210px;
+    }
+
+    .order_form .form_input,
+    .order_form .submit_button
+    {
+        width: 100%;
+    }
+
+    .order_section
+    {
+        margin-bottom: 160px;
+    }
+
+    .developers
+    {
+        width: 399px;
+        margin-right: 48px;
     }
 }
 
@@ -2759,18 +2799,7 @@ img
 {
     .map_section .content_title
     {
-        padding-right: 127px;
-    }
-
-    .map_section_spot
-    {
-        width: 166px;
-        height: 166px;
-        background: url('../images/red-spot-small.png') no-repeat;
-        top: -64px;
-        padding: 48px 27px 108px 56px;
-        font-size: 14px;
-        line-height: 16px;
+        padding-right: 220px;
     }
 }
 
@@ -3000,14 +3029,35 @@ img
         max-width: 315px;
     }
 
+    .safety_section
+    {
+        margin-bottom: 30px;
+    }
+
     .map_wrapper
     {
-        margin-top: 30px;
+        margin-top: 15px;
+        padding-bottom: 112.5%;
     }
 
     .map_section
     {
         margin-bottom: 58px;
+    }
+
+    .map_section_spot
+    {
+        display: none;
+    }
+
+    .map_section_spot_mobile
+    {
+        display: block;
+    }
+
+    .map_section .content_title
+    {
+        padding-right: 0;
     }
 
     .hide_on_small
@@ -3033,24 +3083,58 @@ img
     .footer_section
     {
         flex-wrap: wrap;
+        position: relative;
     }
 
     .phones_wrapper
     {
         width: 100%;
         display: flex;
+        flex-direction: column-reverse;
         margin: 0;
         margin-bottom: 20px;
     }
 
-    .copyright
+    .developers
     {
-        margin-right: 20px;
+        width: 100%;
+        margin-right: 0;
     }
 
     .phone_details
     {
         flex-shrink: 0;
+        margin-right: 70px;
+    }
+
+    .teachers_section
+    {
+        padding-top: 160px;
+    }
+
+    .teachers_section .content_title
+    {
+        max-width: 370px;
+    }
+
+    .vk_link
+    {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .phone
+    {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .call_details
+    {
+        margin: 0 0 25px;
     }
 
     .teachers_section_description
@@ -3067,9 +3151,37 @@ img
         margin-right: 0;
     }
 
+    .block_with_background.girl_jumping_wrapper
+    {
+        background: none;
+    }
+
+    .faq_section
+    {
+        margin-bottom: 0;
+    }
+
+    .mobile_footer_wrapper
+    {
+        background: url(../images/bg-footer-mobile.jpg) no-repeat top center;
+        padding-top: 130px;
+    }
+
+    .horizontal_line
+    {
+        left: 15px;
+        right: 15px;
+    }
+
     .order_section
     {
         margin-bottom: 75px;
+        padding: 0 15px;
+    }
+
+    .footer_section
+    {
+        padding-bottom: 40px;
     }
 }
 

@@ -56,7 +56,7 @@ img
 
 .content_title.block_title
 {
-    margin: 0 0 16px;
+    margin: 0 0 16px -3px;
 }
 
 .content_text
@@ -1393,13 +1393,13 @@ img
 
     .content_title.block_title
     {
-        margin: 0 0 20px;
+        margin: 0 0 20px -3px;
     }
 
     .details_with_photo .details_wrapper
     {
         width: 400px;
-        padding-top: 75px;
+        padding-top: 80px;
     }
 
     .new_skills_title
@@ -1440,7 +1440,7 @@ img
 
     .details_with_photo.dancing
     {
-        margin-top: -38px;
+        margin-top: -36px;
     }
 
     .details_with_photo.dancing .photo_wrapper
@@ -1506,7 +1506,7 @@ img
     {
         width: 95px;
         height: 103px;
-        margin: 0 0 22px 39px;
+        margin: 0 0 22px 34px;
         background: url(../images/icon-hand.svg) no-repeat;
     }
 
@@ -1564,7 +1564,7 @@ img
 
     .small_blue_spot
     {
-        padding: 71px 47px 10px 122px;
+        padding: 81px 47px 10px 122px;
         width: 407px;
         height: 406px;
         background: url(../images/blue-spot-wide.png) no-repeat;
@@ -1716,7 +1716,7 @@ img
 
     .block_with_background.robotics
     {
-        margin-bottom: 12px;
+        margin-bottom: 0;
     }
 
     .teachers_section .content_wrapper
@@ -1728,6 +1728,8 @@ img
     {
         background: url(../images/bg-teachers-wide.jpg) no-repeat bottom center;
         margin-bottom: 124px;
+        padding-top: 40px;
+        margin-top: -27px;
     }
 
     .teachers_section .content_title
@@ -2065,6 +2067,27 @@ img
         width: 1408px;
         top: -87px;
         transform: translateX(-13.1%);
+    }
+
+    .play_button
+    {
+        width: 167px;
+        height: 167px;
+    }
+
+    .video_duration
+    {
+        font-size: 24px;
+    }
+
+    .details_with_photo
+    {
+        margin-top: -13px;
+    }
+
+    .question_answer.before_next_question
+    {
+        margin-bottom: 33px;
     }
 }
 
@@ -2874,7 +2897,7 @@ img
 
     .content_title.block_title
     {
-        margin: 0 0 14px;
+        margin: 0 0 14px -3px;
     }
 
     .different_shifts

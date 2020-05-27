@@ -22,7 +22,8 @@ img
     display: block;
 }
 
-.wide_photo_caption
+.wide_photo_caption,
+.content_text.small_only
 {
     display: none;
 }
@@ -667,6 +668,7 @@ img
     top: 98px;
     left: 61px;
     line-height: 37px;
+    width: 220px;
 }
 
 .teachers_section .leader_description
@@ -2066,6 +2068,60 @@ img
     }
 }
 
+@media screen and (max-width: 1200px)
+{
+    .teachers_section .content_title,
+    .teachers_section .leader_description,
+    .teachers_section .leader_name
+    {
+        left: 20px;
+    }
+
+    .teachers_section .teacher_description
+    {
+        right: 20px;
+        top: 185px;
+    }
+
+    .teachers_section .teacher_name
+    {
+        right: 20px;
+    }
+}
+
+@media screen and (max-width: 1024px)
+{
+    .teachers_section
+    {
+        background-position: top center;
+        padding-top: 220px;
+    }
+
+    .teachers_section .content_title,
+    .teachers_section .leader_description,
+    .teachers_section .teacher_description
+    {
+        position: static;
+        width: 100%;
+        max-width: 520px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .teachers_section .leader_name,
+    .teachers_section .teacher_name
+    {
+        display: none;
+    }
+
+    .teachers_section .content_title
+    {
+        width: 100%;
+        max-width: 600px;
+    }
+}
+
 @media screen and (max-width: 1000px)
 {
     .lego
@@ -2098,6 +2154,21 @@ img
     {
         display: none;
     }
+
+    .painting_section .theater
+    {
+        margin-top: 100px;
+    }
+
+    .painting_section .theater img
+    {
+        max-width: 100%;
+    }
+
+    .adventures_section .notice_description
+    {
+        margin-top: 0;
+    }
 }
 
 @media screen and (max-width: 920px)
@@ -2123,25 +2194,37 @@ img
 
 @media screen and (max-width: 880px)
 {
-    .teachers_section .leader_description
-    {
-        width: 185px;
-    }
-
-    .teachers_section .teacher_description
-    {
-        right: 45px;
-        width: 175px;
-    }
-
-    .painting_section .theater
-    {
-        margin-top: 100px;
-    }
-
     .sticker_wrapper
     {
         display: none;
+    }
+
+    .content_text.small_only
+    {
+        display: block;
+    }
+
+    .food_menu_section .description
+    {
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .footer_section
+    {
+        position: relative;
+    }
+
+    .horizontal_line
+    {
+        width: auto;
+        left: 20px;
+        right: 20px;
+    }
+
+    .main_info_section
+    {
+        margin-top: 0;
     }
 }
 
@@ -2278,13 +2361,19 @@ img
 
     .form_image
     {
-        top: 0;
-        max-width: 60%;
+        display: none;
     }
 
     .jumping_girl_shadow
     {
         display: none;
+    }
+
+    .painting_section .theater .photo_caption
+    {
+        left: -30px;
+        bottom: 150px;
+        width: 210px;
     }
 }
 
@@ -2332,6 +2421,24 @@ img
     .questions
     {
         margin-right: 0;
+    }
+
+    .painting_section .painting
+    {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .painting picture
+    {
+        width: 50%;
+        margin-right: 15px;
+    }
+
+    .painting .photo_caption
+    {
+        margin-top: 35px;
     }
 }
 
@@ -2504,6 +2611,7 @@ img
         display: flex;
         width: 100%;
         align-items: center;
+        flex-direction: row-reverse;
     }
 
     .adventures_section .notice_image
@@ -2632,6 +2740,11 @@ img
         overflow-x: hidden;
     }
 
+    .shifted_image_block
+    {
+        display: none;
+    }
+
     .block_with_background,
     .block_with_background.friendship_section
     {
@@ -2667,7 +2780,11 @@ img
         font-size: 16px;
         line-height: 21px;
         margin: 0 0 16px;
-        max-width: 280px;
+    }
+
+    .text_part
+    {
+        margin-right: 0;
     }
 
     .safety_feature_text,
@@ -2897,6 +3014,15 @@ img
     .phone_details
     {
         flex-shrink: 0;
+    }
+
+    .teachers_section .content_title,
+    .teachers_section .leader_description,
+    .teachers_section .teacher_description
+    {
+        text-align: left;
+        margin-left: 0;
+        margin-right: 0;
     }
 }
 

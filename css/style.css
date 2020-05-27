@@ -2118,11 +2118,17 @@ img
     {
         background-position: top center;
         padding-top: 220px;
+
     }
 
-    .teachers_section .content_title,
-    .teachers_section .leader_description,
-    .teachers_section .teacher_description
+    .teachers_section_description
+    {
+        display: flex;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .teachers_section .content_title
     {
         position: static;
         width: 100%;
@@ -2130,6 +2136,18 @@ img
         text-align: center;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .teachers_section .leader_description,
+    .teachers_section .teacher_description
+    {
+        position: static;
+        width: 50%;
+    }
+
+    .teachers_section .leader_description
+    {
+        margin-right: 50px;
     }
 
     .teachers_section .leader_name,
@@ -2306,7 +2324,7 @@ img
     .purple_spot
     {
         width: 750px;
-        top: -135px;
+        top: -35px;
         transform: translateX(0.4%);
     }
 
@@ -2641,7 +2659,6 @@ img
     {
         margin: 0;
         order: 2;
-        width: 50%;
         margin-top: -15px;
     }
 
@@ -2682,15 +2699,10 @@ img
         align-items: center;
     }
 
-    .music_section .cartoons img
-    {
-        max-width: 50%;
-    }
-
     .music_section .cartoons .photo_caption
     {
         padding: 0 15px 0 0;
-        width: auto;
+        width: 60%;
     }
 
     .music_section .music .photo_caption
@@ -2758,7 +2770,8 @@ img
 
 @media screen and (max-width: 480px)
 {
-    body
+    body,
+    html
     {
         overflow-x: hidden;
     }
@@ -2958,11 +2971,6 @@ img
         width: 100%;
     }
 
-    .picture_frame
-    {
-        width: 60%;
-    }
-
     .photo_caption.application_caption
     {
         width: 40%;
@@ -3039,6 +3047,11 @@ img
         flex-shrink: 0;
     }
 
+    .teachers_section_description
+    {
+        display: block;
+    }
+
     .teachers_section .content_title,
     .teachers_section .leader_description,
     .teachers_section .teacher_description
@@ -3046,6 +3059,11 @@ img
         text-align: left;
         margin-left: 0;
         margin-right: 0;
+    }
+
+    .order_section
+    {
+        margin-bottom: 75px;
     }
 }
 
@@ -3121,11 +3139,6 @@ img
     .painting_section .painting
     {
         margin-bottom: 20px;
-    }
-
-    .picture_frame
-    {
-        width: 40%;
     }
 
     .photo_caption.application_caption

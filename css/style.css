@@ -17,6 +17,11 @@ img
     max-width: 100%;
 }
 
+.spot_holder
+{
+    position: relative;
+}
+
 .block_image
 {
     display: block;
@@ -392,17 +397,22 @@ img
     right: -53px;
 }
 
+.small_orange_spot_holder
+{
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
 .small_orange_spot
 {
     padding: 74px 58px 50px 73px;
-    /* width: 305px; */
     width: 289px;
-    /* height: 314px; */
     height: 289px;
     background: url('../images/orange-spot.png') no-repeat;
     position: absolute;
     bottom: -137px;
-    left: 183px;
+    left: -73px;
 }
 
 .icon_bottle
@@ -1534,6 +1544,11 @@ img
         background: url(../images/icon-hand.svg) no-repeat;
     }
 
+    .small_orange_spot_holder
+    {
+        max-width: 1000px;
+    }
+
     .small_orange_spot
     {
         padding: 76px 59px 23px 104px;
@@ -1541,7 +1556,7 @@ img
         height: 372px;
         background: url(../images/orange-spot-wide.png) no-repeat;
         bottom: -168px;
-        left: 350px;
+        left: -104px;
     }
 
     .small_purple_spot
@@ -2157,7 +2172,6 @@ img
         position: static;
         width: 100%;
         max-width: 520px;
-        text-align: center;
         margin-left: auto;
         margin-right: auto;
     }
@@ -2183,7 +2197,7 @@ img
     .teachers_section .content_title
     {
         width: 100%;
-        max-width: 600px;
+        max-width: 800px;
     }
 
     .activities_section .splash,
@@ -2958,12 +2972,6 @@ img
         margin-bottom: 48px;
     }
 
-    .teachers_section .leader_description,
-    .teachers_section .teacher_description
-    {
-        max-width: 100%;
-    }
-
     .safety_section
     {
         margin-bottom: 90px;
@@ -2987,28 +2995,36 @@ img
     /* Spots */
     .blue_spot
     {
-        width: 389px;
-        top: 319px;
-        right: -200px;
+        width: 121.5%;
+        top: -43vw;
+        right: -65%;
         left: auto;
         transform: none;
     }
 
     .purple_spot
     {
-        width: 534px;
-        top: -67px;
-        left: -296px;
+        width: 166.8%;
+        top: -32vw;
+        left: -95%;
         transform: none;
     }
 
     .yellow_spot
     {
-        width: 478px;
-        top: -65px;
+        width: 149%;
+        top: -44vw;
         transform: none;
         left: auto;
-        right: -268px;
+        right: -85%;
+    }
+
+    .blue_spot img,
+    .purple_spot img,
+    .yellow_spot img
+    {
+        width: 100%;
+        height: auto;
     }
 
     .footer_section
@@ -3040,7 +3056,19 @@ img
 
     .teachers_section
     {
-        padding-top: 200px;
+        padding-top: 223px;
+        background-position: top left -228px;
+        margin-bottom: 46px;
+    }
+
+    .teachers_section .leader_description
+    {
+        margin-right: 35px;
+    }
+
+    .teachers_section .photo_caption
+    {
+        margin-bottom: 18px;
     }
 
     .teachers_section .content_title
@@ -3066,20 +3094,6 @@ img
     .call_details
     {
         margin: 0 0 25px;
-    }
-
-    .teachers_section_description
-    {
-        display: block;
-    }
-
-    .teachers_section .content_title,
-    .teachers_section .leader_description,
-    .teachers_section .teacher_description
-    {
-        text-align: left;
-        margin-left: 0;
-        margin-right: 0;
     }
 
     .block_with_background.girl_jumping_wrapper
@@ -3351,10 +3365,19 @@ img
 
     .teachers_section
     {
-        padding-top: 106px;
-        background-image: url(../images/bg-teachers-small.jpg);
-        background-position: top -36px left -193px;
-        margin-bottom: 46px;
+        padding-top: 175px;
+        background-position: top -36px left -282px;
+    }
+
+    .teachers_section .leader_description,
+    .teachers_section .teacher_description
+    {
+        max-width: 100%;
+    }
+
+    .teachers_section_description
+    {
+        display: block;
     }
 
     .teachers_section .content_title
@@ -3535,5 +3558,12 @@ img
     .painting_section .theater .photo_caption
     {
         top: 0;
+    }
+
+    .teachers_section
+    {
+        padding-top: 106px;
+        background-position: top -36px left -193px;
+        background-image: url(../images/bg-teachers-small.jpg);
     }
 }

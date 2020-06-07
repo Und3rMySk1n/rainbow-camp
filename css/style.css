@@ -59,6 +59,11 @@ img
     margin: 0 0 20px;
 }
 
+.faq_section_title
+{
+    margin: 0 0 22px;
+}
+
 .content_title.block_title
 {
     margin: 0 0 16px -3px;
@@ -167,7 +172,7 @@ img
 {
     position: absolute;
     width: 910px;
-    top: 49px;
+    top: -299px;
     left: 50%;
     transform: translateX(-7.4%);
     z-index: -1;
@@ -177,7 +182,7 @@ img
 {
     position: absolute;
     width: 1354px;
-    top: -19px;
+    top: -75px;
     left: 50%;
     transform: translateX(-68.4%);
     z-index: -1;
@@ -187,7 +192,7 @@ img
 {
     position: absolute;
     width: 1086px;
-    top: -2px;
+    top: -188px;
     left: 50%;
     transform: translateX(-15%);
     z-index: -1;
@@ -241,7 +246,7 @@ img
 /* Main info */
 .main_info_section
 {
-    margin-top: -43px;
+    margin-top: -3px;
     margin-bottom: 94px;
 }
 
@@ -312,7 +317,7 @@ img
 {
     display: flex;
     justify-content: space-between;
-    margin-top: -10px;
+    margin-top: -12px;
 }
 
 .details_with_photo .details_wrapper
@@ -483,9 +488,9 @@ img
 .sticker_wrapper
 {
     position: absolute;
-    right: 8px;
-    top: 30px;
-    width: 298px;
+    right: 4px;
+    top: 27px;
+    width: 307px;
 }
 
 /* Adventures */
@@ -541,7 +546,7 @@ img
 .painting_section
 {
     display: flex;
-    margin-bottom: 21px;
+    margin-bottom: 69px;
 }
 
 .painting_section .painting
@@ -554,9 +559,9 @@ img
 .painting_section .theater
 {
     width: 490px;
-    margin-left: -69px;
-    margin-top: -14px;
-    margin-right: -25px;
+    margin-left: -14px;
+    margin-top: -10px;
+    margin-right: -22px;
     position: relative;
 }
 
@@ -568,14 +573,14 @@ img
 .painting_section .theater .photo_caption
 {
     position: absolute;
-    left: -19px;
-    bottom: 232px;
+    left: -64px;
+    bottom: 181px;
     width: 250px;
 }
 
 .picture_frame
 {
-    margin-bottom: 31px;
+    margin-bottom: 24px;
 }
 
 .painting .photo_caption
@@ -636,7 +641,7 @@ img
 
 .music_section .cartoons img
 {
-    margin: 16px 0 10px -31px;
+    margin: -14px 0 10px -31px;
     max-width: none;
 }
 
@@ -649,7 +654,7 @@ img
 .robotics_section
 {
     position: relative;
-    margin-bottom: 125px;
+    margin-bottom: 95px;
 }
 
 .lego
@@ -666,6 +671,7 @@ img
 .teachers_section
 {
     background: url('../images/bg-teachers.png') no-repeat bottom center;
+    padding-top: 30px;
     margin-bottom: 106px;
 }
 
@@ -879,7 +885,7 @@ img
     font-weight: 700;
     font-size: 16px;
     line-height: 18px;
-    margin: 3px 0 0;
+    margin: 6px 0 0;
 }
 
 .map_details_subtitle
@@ -1007,6 +1013,16 @@ img
     margin: 0 0 23px;
 }
 
+.question_answer.unordered_list_item
+{
+    margin: 0 0 22px;
+}
+
+.question_answer.unordered_list_item.last_on_small
+{
+    margin: 0 0 19px;
+}
+
 .list_item
 {
     margin: 0 0 20px;
@@ -1019,7 +1035,7 @@ img
 
 .question_answer.before_next_question
 {
-    margin: 0 0 31px;
+    margin: 0 0 29px;
 }
 
 .questions_list
@@ -1030,7 +1046,7 @@ img
 
 .list_item
 {
-    margin: 0 0 17px;
+    margin: 0 0 14px;
 }
 
 .question_answer.no_indent
@@ -1345,7 +1361,7 @@ img
 {
     .main_info_section
     {
-        margin-top: -50px;
+        margin-top: -2px;
     }
 
     .content_wrapper
@@ -1618,9 +1634,9 @@ img
 
     .sticker_wrapper
     {
-        right: -16px;
-        top: -16px;
-        width: 407px;
+        right: 1px;
+        top: 13px;
+        width: 362px;
     }
 
     .food_menu_section .menu_wrapper
@@ -1673,7 +1689,7 @@ img
 
     .picture_frame
     {
-        margin-bottom: 40px;
+        margin-bottom: 30px;
     }
 
     .photo_caption.application_caption
@@ -1688,20 +1704,20 @@ img
 
     .painting_section .theater
     {
-        margin-left: -95px;
-        margin-top: -17px;
+        margin-left: -36px;
+        margin-top: -5px;
     }
 
     .painting_section .theater .photo_caption
     {
-        left: -21px;
-        bottom: 302px;
+        left: -81px;
+        bottom: 238px;
         width: 310px;
     }
 
     .painting_section
     {
-        margin-bottom: 11px;
+        margin-bottom: 74px;
     }
 
     .activities_section .splash
@@ -1898,7 +1914,7 @@ img
     {
         font-size: 18px;
         line-height: 21px;
-        margin: 5px 0 0;
+        margin: 4px 0 0;
     }
 
     .map_details_subtitle
@@ -1938,6 +1954,21 @@ img
         margin: 0 0 29px;
     }
 
+    .list_item
+    {
+        margin: 0 0 19px;
+    }
+
+    .question_answer.unordered_list_item
+    {
+        margin: 0 0 26px;
+    }
+
+    .question_answer.unordered_list_item.last_on_small
+    {
+        margin: 0 0 28px;
+    }
+
     .questions
     {
         width: 790px;
@@ -1955,12 +1986,13 @@ img
 
     .question_answer.last
     {
-        margin: 0 0 48px;
+        margin: 0 0 43px;
     }
 
     .questions_list
     {
         padding-left: 76px;
+        margin-bottom: 43px;
     }
 
     .block_with_background.girl_jumping_wrapper
@@ -2090,21 +2122,21 @@ img
     .blue_spot
     {
         width: 1284px;
-        top: -34px;
+        top: -436px;
         transform: translateX(-8.5%);
     }
 
     .purple_spot
     {
         width: 1737px;
-        top: -49px;
+        top: -116px;
         transform: translateX(-72.0%);
     }
 
     .yellow_spot
     {
         width: 1408px;
-        top: -87px;
+        top: -285px;
         transform: translateX(-13.1%);
     }
 
@@ -2188,10 +2220,25 @@ img
         margin-right: 50px;
     }
 
-    .teachers_section .leader_name,
+    .teacher_names_holder
+    {
+        position: relative;
+        margin: 0 auto;
+        max-width: 800px;
+    }
+
+    .teachers_section .leader_name
+    {
+        left: 0;
+        width: 100px;
+        bottom: 55px;
+    }
+
     .teachers_section .teacher_name
     {
-        display: none;
+        right: 0;
+        width: 100px;
+        bottom: 35px;
     }
 
     .teachers_section .content_title
@@ -2259,12 +2306,6 @@ img
         line-height: 20px;
     }
 
-    .leader_name,
-    .teacher_name
-    {
-        display: none;
-    }
-
     .music_section .cartoons img
     {
         margin: 0 0 -10px -10px;
@@ -2310,9 +2351,14 @@ img
 
 @media screen and (max-width: 860px)
 {
+    .photo_caption_wrapper.right
+    {
+        justify-content:flex-start;
+    }
+
     .photo_caption.limited_width
     {
-        width: 100%;
+        width: 94%;
     }
 
     .details_with_photo
@@ -2367,14 +2413,14 @@ img
     .purple_spot
     {
         width: 750px;
-        top: -35px;
+        top: -90px;
         transform: translateX(0.4%);
     }
 
     .yellow_spot
     {
         width: 853px;
-        top: -78px;
+        top: -200px;
         transform: translateX(-4%);
     }
 
@@ -2386,6 +2432,15 @@ img
     .girl_jumping_wrapper .content_title
     {
         max-width: 360px;
+    }
+}
+
+@media screen and (max-width: 820px)
+{
+    .leader_name,
+    .teacher_name
+    {
+        display: none;
     }
 }
 
@@ -2665,7 +2720,7 @@ img
     .blue_spot
     {
         width: 710px;
-        top: 131px;
+        top: -394px;
         transform: translateX(6.6%);
     }
 }
@@ -2774,9 +2829,11 @@ img
     .content_text,
     .content_text.limited_with,
     .comfort_section .content_text,
-    .questions
+    .questions,
+    .video_caption,
+    .photo_caption
     {
-        max-width: 520px;
+        max-width: 94%;
     }
 
     .text_part
@@ -2868,6 +2925,7 @@ img
     {
         font-size: 13px;
         line-height: 16px;
+        margin-left: -6px;
     }
 
     .top_block_video
@@ -2941,7 +2999,7 @@ img
 
     .food_menu_section .menu_wrapper
     {
-        margin-top: 19px;
+        margin-top: 20px;
     }
 
     .adventures_section .notice
@@ -3200,6 +3258,7 @@ img
     {
         flex-direction: column-reverse;
         margin-bottom: 40px;
+        margin-top: -10px;
     }
 
     .music_section .music
@@ -3213,6 +3272,8 @@ img
     .music_section .cartoons img
     {
         margin: 0;
+        max-width: 110%;
+        transform: translateY(5px);
     }
 
     .music_section .cartoons
@@ -3324,7 +3385,7 @@ img
 
     .music_section .music .photo_caption
     {
-        width: 100%;
+        width: 94%;
     }
 
     .teachers_section
@@ -3411,6 +3472,7 @@ img
     .map_section_spot_mobile
     {
         display: block;
+        margin-left: -14px;
     }
 
     .map_section .content_title, .map_section .content_text
@@ -3525,7 +3587,7 @@ img
     .map_details_description
     {
         font-size: 11px;
-        line-height: 11px;
+        line-height: 13px;
         max-width: none;
     }
 
@@ -3551,7 +3613,7 @@ img
     .photo_caption.application_caption
     {
         width: 60%;
-        margin-top: 15px;
+        margin-top: 17px;
         padding-left: 0;
     }
 

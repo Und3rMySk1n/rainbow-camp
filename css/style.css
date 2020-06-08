@@ -165,36 +165,36 @@ img
 .block_with_background.girl_jumping_wrapper
 {
     overflow-y: hidden;
-    background: url(../images/bg-footer.png) no-repeat bottom center;
+    background: url(../images/bg-footer.jpg) no-repeat bottom center;
 }
 
 .blue_spot
 {
     position: absolute;
-    width: 910px;
-    top: -299px;
+    width: 909px;
+    top: -305px;
     left: 50%;
-    transform: translateX(-7.4%);
+    transform: translateX(-7.8%);
     z-index: -1;
 }
 
 .purple_spot
 {
     position: absolute;
-    width: 1354px;
-    top: -75px;
+    width: 1347px;
+    top: -80px;
     left: 50%;
-    transform: translateX(-68.4%);
+    transform: translateX(-68.9%);
     z-index: -1;
 }
 
 .yellow_spot
 {
     position: absolute;
-    width: 1086px;
-    top: -188px;
+    width: 1099px;
+    top: -195px;
     left: 50%;
-    transform: translateX(-15%);
+    transform: translateX(-16%);
     z-index: -1;
 }
 
@@ -915,7 +915,7 @@ img
 /* FAQ */
 .faq_section
 {
-    margin-bottom: 251px;
+    margin-bottom: 224px;
 }
 
 .questions_and_docs
@@ -1058,9 +1058,8 @@ img
 .order_section
 {
     max-width: 880px;
-    margin: 0 auto 250px;
+    margin: 0 auto 261px;
     padding: 0 39px;
-    /* background: linear-gradient(139.75deg, #FF8A00 35.21%, #FFAF25 89.67%); */
     position: relative;
 }
 
@@ -1084,14 +1083,14 @@ img
 {
     list-style: none;
     max-width: 325px;
-    margin-bottom: 69px;
+    margin-bottom: 57px;
 }
 
 .order_section .order_features_list li
 {
-    margin-bottom: 7px;
+    margin-bottom: 9px;
     font-size: 18px;
-    line-height: 23px;
+    line-height: 21px;
 }
 
 .order_form .submit_button
@@ -1104,7 +1103,7 @@ img
     cursor: pointer;
     border: none;
     font-size: 18px;
-    margin-bottom: 10px;
+    margin-bottom: 11px;
 }
 
 .order_form .submit_button:disabled
@@ -1200,28 +1199,18 @@ img
     width: 310px;
 }
 
-.order_section .jumping_girl_shadow
-{
-    position: absolute;
-    width: 566px;
-    height: 272px;
-    right: -302px;
-    bottom: -293px;
-    background: url(../images/jumping-girl-shadow.png);
-}
-
 .form_image
 {
     position: absolute;
-    top: -194px;
-    right: -130px;
+    top: -174px;
+    right: -198px;
 }
 
 /* Footer */
 .footer_section
 {
     display: flex;
-    padding: 19px 20px 56px;
+    padding: 19px 18px 50px;
 }
 
 .footer_section *
@@ -1299,8 +1288,8 @@ img
     position: relative;
     z-index: 1;
     right: -9px;
-    width: 73px;
-    height: 73px;
+    width: 67px;
+    height: 67px;
     background: url('../images/icon-vk.svg') no-repeat;
 }
 
@@ -1399,9 +1388,7 @@ img
 
     .notice_15_minutes .fifteen_minutes
     {
-        margin: 0;
-        margin-left: 14px;
-        margin-bottom: 4px;
+        margin: 16px 0 9px 34px;
     }
 
     .notice_15_minutes .minutes_text,
@@ -1409,7 +1396,7 @@ img
     {
         font-size: 18px;
         line-height: 23px;
-        margin-right: 0;
+        margin-right: -10px;
     }
 
     .video_caption
@@ -1480,7 +1467,12 @@ img
 
     .shifts_section
     {
-        padding-bottom: 78px;
+        padding-bottom: 48px;
+    }
+
+    .dancing_section
+    {
+        padding-top: 30px;
     }
 
     .photo_caption.limited_width
@@ -1520,8 +1512,9 @@ img
 
     .friendship_section
     {
-        padding-top: 136px;
+        padding-top: 176px;
         margin-bottom: 2px;
+        margin-top: -201px;
     }
 
     .national_belt_image
@@ -1997,24 +1990,29 @@ img
 
     .block_with_background.girl_jumping_wrapper
     {
-        background: url(../images/bg-footer-wide.jpg) no-repeat bottom center;
+        background: url(../images/bg-footer-wide.jpg) no-repeat bottom -236px center;
     }
 
     .faq_section
     {
-        margin-bottom: 359px;
+        margin-bottom: 281px;
     }
 
     .order_section
     {
         max-width: 1080px;
-        margin: 0 auto 300px;
+        margin: 0 auto 313px;
+    }
+
+    .footer_section
+    {
+        padding: 17px 18px 50px;
     }
 
     .form_image
     {
-        top: -243px;
-        right: -134px;
+        top: -238px;
+        right: -340px;
     }
 
     .order_section .content_title
@@ -2032,14 +2030,14 @@ img
     .order_section .order_features_list
     {
         max-width: 390px;
-        margin-bottom: 96px;
+        margin-bottom: 67px;
     }
 
     .order_section .order_features_list li
     {
-        margin-bottom: 9px;
+        margin-bottom: 11px;
         font-size: 21px;
-        line-height: 27px;
+        line-height: 25px;
     }
 
     .order_form .form_input,
@@ -2066,8 +2064,8 @@ img
 
     .copyright, .copyright span
     {
-        font-size: 17px;
-        line-height: 22px;
+        font-size: 16px;
+        line-height: 21px;
         margin: 0 0 1px;
     }
 
@@ -2080,13 +2078,13 @@ img
     .phone
     {
         margin: 0 0 2px;
-        font-size: 20px;
-        line-height: 24px;
+        font-size: 19px;
+        line-height: 23px;
     }
 
     .call_details
     {
-        font-size: 15px;
+        font-size: 14px;
     }
 
     .developers
@@ -2097,14 +2095,21 @@ img
 
     .developers_list
     {
-        font-size: 17px;
-        line-height: 22px;
+        font-size: 16px;
+        line-height: 21px;
     }
 
     .bureau
     {
-        font-size: 17px;
-        line-height: 22px;
+        font-size: 16px;
+        line-height: 21px;
+    }
+
+    .vk_link
+    {
+        right: -14px;
+        width: 80px;
+        height: 80px;
     }
 
     .map_section_spot
@@ -2122,22 +2127,22 @@ img
     .blue_spot
     {
         width: 1284px;
-        top: -436px;
-        transform: translateX(-8.5%);
+        top: -427px;
+        transform: translateX(-6.9%);
     }
 
     .purple_spot
     {
         width: 1737px;
-        top: -116px;
-        transform: translateX(-72.0%);
+        top: -85px;
+        transform: translateX(-71.5%);
     }
 
     .yellow_spot
     {
         width: 1408px;
-        top: -285px;
-        transform: translateX(-13.1%);
+        top: -255px;
+        transform: translateX(-12.5%);
     }
 
     .play_button
@@ -2353,7 +2358,7 @@ img
 {
     .photo_caption_wrapper.right
     {
-        justify-content:flex-start;
+        justify-content: flex-start;
     }
 
     .photo_caption.limited_width
@@ -2503,19 +2508,24 @@ img
         display: none;
     }
 
+    .block_with_background.girl_jumping_wrapper
+    {
+        background-position: bottom -70px center;
+    }
+
+    .faq_section
+    {
+        margin-bottom: 260px;
+    }
+
     .order_section
     {
-        max-width: 600px;
+        max-width: 520px;
     }
 
     .girl_jumping_wrapper .content_title
     {
         max-width: none;
-    }
-
-    .jumping_girl_shadow
-    {
-        display: none;
     }
 
     .painting_section .theater .photo_caption
@@ -2533,7 +2543,7 @@ img
 
     .order_section
     {
-        margin-bottom: 160px;
+        margin-bottom: 120px;
     }
 
     .developers

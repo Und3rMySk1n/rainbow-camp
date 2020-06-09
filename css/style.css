@@ -551,7 +551,7 @@ img
 
 .painting_section .painting
 {
-    width: 392px;
+    width: 412px;
     margin-right: -24px;
     z-index: 1;
 }
@@ -559,8 +559,8 @@ img
 .painting_section .theater
 {
     width: 490px;
-    margin-left: -14px;
-    margin-top: -10px;
+    margin-left: -33px;
+    margin-top: -4px;
     margin-right: -22px;
     position: relative;
 }
@@ -2165,6 +2165,12 @@ img
     {
         margin-bottom: 33px;
     }
+
+    .docs .doc_link
+    {
+        font-size: 18px;
+        line-height: 25px;
+    }
 }
 
 @media screen and (max-width: 1200px)
@@ -2582,11 +2588,11 @@ img
 
     .painting_section .theater .photo_caption
     {
-        left: 0;
-        top: 100px;
         width: 38%;
         text-align: left;
         max-width: 205px;
+        left: 14%;
+        bottom: 200px;
     }
 
     .docs
@@ -3063,28 +3069,28 @@ img
     /* Spots */
     .blue_spot
     {
-        width: 121.5%;
-        top: -43vw;
-        right: -65%;
+        width: 134.5%;
+        top: -45vw;
+        right: -74%;
         left: auto;
         transform: none;
     }
 
     .purple_spot
     {
-        width: 166.8%;
-        top: -32vw;
-        left: -95%;
+        width: 185.8%;
+        top: -33vw;
+        left: -108%;
         transform: none;
     }
 
     .yellow_spot
     {
-        width: 149%;
-        top: -44vw;
+        width: 160%;
+        top: -47vw;
         transform: none;
         left: auto;
-        right: -85%;
+        right: -93%;
     }
 
     .blue_spot img,
@@ -3125,7 +3131,7 @@ img
     .teachers_section
     {
         padding-top: 223px;
-        background-position: top left -228px;
+        background-position: top -65px left -228px;
         margin-bottom: 46px;
     }
 
@@ -3217,6 +3223,28 @@ img
     {
         width: auto;
     }
+
+    .picture_frame
+    {
+        margin-bottom: 6px;
+    }
+
+    .painting_section .theater img
+    {
+        max-width: 92%;
+        margin-right: -10px;
+    }
+
+    .painting_section
+    {
+        margin-bottom: 39px;
+    }
+
+    .painting_section .theater .photo_caption
+    {
+        left: 5%;
+        bottom: 300px;
+    }
 }
 
 @media screen and (max-width: 600px)
@@ -3278,12 +3306,17 @@ img
         flex-direction: column-reverse;
     }
 
-    .music_section .music img,
     .music_section .cartoons img
     {
         margin: 0;
         max-width: 110%;
         transform: translateY(5px);
+    }
+
+    .music_section .music img
+    {
+        margin: 7px 0 2px -15px;
+        max-width: 100%;
     }
 
     .music_section .cartoons
@@ -3437,7 +3470,7 @@ img
     .teachers_section
     {
         padding-top: 175px;
-        background-position: top -36px left -282px;
+        background-position: top -75px left -282px;
     }
 
     .teachers_section .leader_description,
@@ -3485,9 +3518,15 @@ img
         margin-left: -14px;
     }
 
-    .map_section .content_title, .map_section .content_text
+    .map_section .content_title,
+    .map_section .content_text
     {
         padding-right: 0;
+    }
+
+    .map_section .content_text
+    {
+        max-width: 245px;
     }
 
     .safety_section
@@ -3505,6 +3544,84 @@ img
     {
         margin: -15px 0 0;
         max-width: 200px;
+    }
+
+    .painting_section .theater .photo_caption
+    {
+        left: 0;
+        top: 100px;
+    }
+
+    .order_section .content_title
+    {
+        margin-bottom: 16px;
+    }
+
+    .order_section .content_text
+    {
+        font-size: 16px;
+        line-height: 21px;
+    }
+
+    .order_section .order_features_list
+    {
+        max-width: 94%;
+    }
+
+    .order_section .order_features_list li
+    {
+        margin-bottom: 9px;
+        font-size: 16px;
+        line-height: 21px;
+    }
+
+    .order_form .form_input,
+    .order_form .submit_button
+    {
+        line-height: 50px;
+        font-size: 16px;
+    }
+
+    .order_form .submit_button
+    {
+        margin-bottom: 8px;
+    }
+
+    .order_section .form_notice
+    {
+        font-size: 13px;
+    }
+
+    .order_section
+    {
+        margin-bottom: 63px;
+    }
+
+    .call_details
+    {
+        margin: 0 0 20px;
+    }
+
+    .copyright,
+    .copyright span,
+    .developers_list,
+    .bureau
+    {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .copyright,
+    .copyright span
+    {
+        margin: 0;
+    }
+
+    .vk_link
+    {
+        right: 12px;
+        width: 42px;
+        height: 42px;
     }
 }
 
@@ -3574,7 +3691,7 @@ img
 
     .by_bus
     {
-        margin-top: 5px;
+        margin-top: 1px;
     }
 
     .map_details_title,
@@ -3605,6 +3722,11 @@ img
     {
         margin-bottom: 47px;
     }
+
+    .photo_caption.application_caption
+    {
+        margin-top: 18px;
+    }
 }
 
 @media screen and (max-width: 360px)
@@ -3629,7 +3751,7 @@ img
 
     .painting_section .theater .photo_caption
     {
-        top: 0;
+        top: 20px;
     }
 
     .teachers_section

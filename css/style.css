@@ -1346,6 +1346,15 @@ img
     max-width: none;
 }
 
+/* Retina backgrounds */
+@media screen and (-webkit-min-device-pixel-ratio: 2)
+{
+    .lego
+    {
+        background: url('../images/lego-2x.png') no-repeat;
+    }
+}
+
 @media screen and (min-width: 1281px)
 {
     .main_info_section
@@ -1759,7 +1768,7 @@ img
         height: 512px;
         bottom: -115px;
         right: -239px;
-        background: url(../images/lego-wide.png) no-repeat;
+        background: url(../images/wide/lego.png) no-repeat;
     }
 
     .block_with_background.robotics
@@ -2170,6 +2179,14 @@ img
     {
         font-size: 18px;
         line-height: 25px;
+    }
+}
+
+@media screen and (min-width: 1281px) and (-webkit-min-device-pixel-ratio: 2)
+{
+    .lego
+    {
+        background: url(../images/wide/lego-2x.png) no-repeat;
     }
 }
 

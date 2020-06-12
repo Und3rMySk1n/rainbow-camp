@@ -119,23 +119,25 @@
           <source srcset="images/back-blue-small.jpg 1x" media="(max-width: 600px) ">
           <source srcset="images/back-blue.jpg 1x" media="(max-width: 1280px) ">
           <img
-                  src="images/back-blue-wide.jpg"
-                  srcset="images/back-blue-wide.jpg 1x"
-                  alt=""
+              src="images/back-blue-wide.jpg"
+              srcset="images/back-blue-wide.jpg 1x"
+              alt=""
           >
         </picture>
       </div>
     </div>
-    <picture>
-      <source srcset="images/photo/self-defense.jpg 1x, images/photo/self-defense-2x.jpg 2x" media="(max-width: 1280px) ">
-      <img src="images/photo/wide/self-defense.jpg"
-           srcset="images/photo/wide/self-defense.jpg 1x, images/photo/wide/self-defense-2x.jpg 2x"
-           class="block_image"
-           alt="Показательный бой по тэкэндо."
-      >
-    </picture>
-
-      <div class="photo_caption_wrapper">
+    <div class="holder horizontal_photo_holder">
+      <picture>
+        <source srcset="images/photo/self-defense.jpg 1x, images/photo/self-defense-2x.jpg 2x"
+                media="(max-width: 1280px) ">
+        <img src="images/photo/wide/self-defense.jpg"
+             srcset="images/photo/wide/self-defense.jpg 1x, images/photo/wide/self-defense-2x.jpg 2x"
+             class="block_image"
+             alt="Показательный бой по тэкэндо."
+        >
+      </picture>
+    </div>
+    <div class="photo_caption_wrapper">
       <p class="photo_caption">Ребята учатся приёмам самообороны</p>
     </div>
   </div>
@@ -171,14 +173,16 @@
       </div>
     </div>
     <div class="photo_wrapper">
-      <picture>
-        <source srcset="images/photo/gymnastics.jpg 1x, images/photo/gymnastics-2x.jpg 2x" media="(max-width: 1280px) ">
-        <img
-            src="images/photo/gymnastics.jpg"
-            srcset="images/photo/wide/gymnastics.jpg 1x, images/photo/wide/gymnastics-2x.jpg 2x"
-            alt="Девочка-гимнастка делает вертикальный шпагат"
-        >
-      </picture>
+      <div class="holder vertical_photo_holder">
+        <picture>
+          <source srcset="images/photo/gymnastics.jpg 1x, images/photo/gymnastics-2x.jpg 2x" media="(max-width: 1280px) ">
+          <img
+              src="images/photo/gymnastics.jpg"
+              srcset="images/photo/wide/gymnastics.jpg 1x, images/photo/wide/gymnastics-2x.jpg 2x"
+              alt="Девочка-гимнастка делает вертикальный шпагат"
+          >
+        </picture>
+      </div>
       <div class="photo_caption">
         <span class="nobr">На занятиях</span> <span class="nobr">по художественной</span> гимнастике дети делают
         растяжку, танцуют <span class="nobr">с обручем</span> <span class="nobr">и лентами</span>
@@ -221,14 +225,16 @@
 
   <div class="content_wrapper details_with_photo dancing">
     <div class="photo_wrapper">
-      <picture>
-        <source srcset="images/photo/dancing.jpg 1x, images/photo/dancing-2x.jpg 2x" media="(max-width: 1280px) ">
-        <img
-            src="images/photo/dancing.jpg"
-            srcset="images/photo/wide/dancing.jpg 1x, images/photo/wide/dancing-2x.jpg 2x"
-            alt="Девочка показывает балетное движение «батман тандю», стоя на сцене «Радужного»"
-        >
-      </picture>
+      <div class="holder vertical_photo_holder">
+        <picture>
+          <source srcset="images/photo/dancing.jpg 1x, images/photo/dancing-2x.jpg 2x" media="(max-width: 1280px) ">
+          <img
+              src="images/photo/dancing.jpg"
+              srcset="images/photo/wide/dancing.jpg 1x, images/photo/wide/dancing-2x.jpg 2x"
+              alt="Девочка показывает балетное движение «батман тандю», стоя на сцене «Радужного»"
+          >
+        </picture>
+      </div>
       <div class="photo_caption">
         <span class="nobr">В конце</span> <span class="nobr">смены —</span> концерт,
         <span class="nobr">на который</span> приходят родители. Ребята сами продумывают номера
@@ -280,15 +286,17 @@
         </picture>
       </div>
     </div>
-    <picture>
-      <source srcset="images/photo/national-song.jpg 1x, images/photo/national-song-2x.jpg" media="(max-width: 1280px) ">
-      <img
-          src="images/photo/national-song.jpg"
-          srcset="images/photo/wide/national-song.jpg 1x, images/photo/wide/national-song-2x.jpg"
-          class="block_image"
-          alt="Хор поет народные песни под аккордеон. Певцы одеты в народные костюмы. В хоре и взрослые, и дети."
-      >
-    </picture>
+    <div class="holder horizontal_photo_holder">
+      <picture>
+        <source srcset="images/photo/national-song.jpg 1x, images/photo/national-song-2x.jpg" media="(max-width: 1280px) ">
+        <img
+            src="images/photo/national-song.jpg"
+            srcset="images/photo/wide/national-song.jpg 1x, images/photo/wide/national-song-2x.jpg"
+            class="block_image"
+            alt="Хор поет народные песни под аккордеон. Певцы одеты в народные костюмы. В хоре и взрослые, и дети."
+        >
+      </picture>
+    </div>
     <div class="photo_caption_wrapper">
       <p class="photo_caption">
         <span class="nobr">Под живую</span> музыку дети поют народные песни
@@ -325,14 +333,17 @@
       </div>
     </div>
     <div class="photo_wrapper">
-      <picture>
-        <source srcset="images/photo/national-dance.jpg 1x, images/photo/national-dance-2x.jpg 2x" media="(max-width: 1280px) ">
-        <img
-            src="images/photo/national-dance.jpg"
-            srcset="images/photo/wide/national-dance.jpg 1x, images/photo/wide/national-dance-2x.jpg 2x"
-            alt="Девочка танцует народный танец на сцене."
-        >
-      </picture>
+      <div class="holder vertical_photo_holder">
+        <picture>
+          <source srcset="images/photo/national-dance.jpg 1x, images/photo/national-dance-2x.jpg 2x"
+                  media="(max-width: 1280px) ">
+          <img
+              src="images/photo/national-dance.jpg"
+              srcset="images/photo/wide/national-dance.jpg 1x, images/photo/wide/national-dance-2x.jpg 2x"
+              alt="Девочка танцует народный танец на сцене."
+          >
+        </picture>
+      </div>
       <div class="photo_caption">
         Пока одни дети поют, <span class="nobr">другие —</span> разучивают
         марийские <span class="nobr">и русские</span> народные танцы
@@ -396,9 +407,9 @@
         </p>
       </div>
     </div>
-    <div class="content_wrapper wide_photo_caption">
-      <p class="photo_caption">В каждом корпусе есть по два санузла <span class="nobr">с горячей</span> водой</p>
-    </div>
+  </div>
+  <div class="content_wrapper wide_photo_caption">
+    <p class="photo_caption">В каждом корпусе есть по два санузла <span class="nobr">с горячей</span> водой</p>
   </div>
 </div>
 
@@ -485,15 +496,17 @@
 </div>
 
 <div class="content_wrapper reconstruction_section">
-  <picture>
-    <source srcset="images/photo/reconstruction.jpg 1x, images/photo/reconstruction-2x.jpg 2x" media="(max-width: 1280px) ">
-    <img
-        src="images/photo/wide/reconstruction.jpg"
-        srcset="images/photo/wide/reconstruction.jpg 1x, images/photo/wide/reconstruction-2x.jpg 2x"
-        class="block_image"
-        alt="Дети с поролоновыми оружием. Один атакует мечом, другой отржает удар щитом."
-    >
-  </picture>
+  <div class="holder horizontal_photo_holder">
+    <picture>
+      <source srcset="images/photo/reconstruction.jpg 1x, images/photo/reconstruction-2x.jpg 2x" media="(max-width: 1280px) ">
+      <img
+          src="images/photo/wide/reconstruction.jpg"
+          srcset="images/photo/wide/reconstruction.jpg 1x, images/photo/wide/reconstruction-2x.jpg 2x"
+          class="block_image"
+          alt="Дети с поролоновыми оружием. Один атакует мечом, другой отржает удар щитом."
+      >
+    </picture>
+  </div>
   <div class="photo_caption_wrapper">
     <p class="photo_caption"><span class="photo_caption_title">Реконструкция.</span> <span class="nobr">В лагерь</span>
       приезжают реконструкторы <span class="nobr">из «Древнерусской</span> богатырской заставы»
@@ -538,30 +551,34 @@
 </div>
 
 <div class="content_wrapper activities_section">
-  <picture>
-    <source srcset="images/photo/paintball.jpg 1x, images/photo/paintball-2x.jpg 2x" media="(max-width: 1280px) ">
-    <img
-        src="images/photo/wide/paintball.jpg"
-        srcset="images/photo/wide/paintball.jpg 1x, images/photo/wide/paintball-2x.jpg 2x"
-        class="block_image"
-        alt="Мальчики в лесу в камуфляжных костюмах и защитных масках. Целятся из пейнтобольных ружей в камеру"
-    >
-  </picture>
+  <div class="holder horizontal_photo_holder">
+    <picture>
+      <source srcset="images/photo/paintball.jpg 1x, images/photo/paintball-2x.jpg 2x" media="(max-width: 1280px) ">
+      <img
+          src="images/photo/wide/paintball.jpg"
+          srcset="images/photo/wide/paintball.jpg 1x, images/photo/wide/paintball-2x.jpg 2x"
+          class="block_image"
+          alt="Мальчики в лесу в камуфляжных костюмах и защитных масках. Целятся из пейнтобольных ружей в камеру"
+      >
+    </picture>
+  </div>
   <div class="photo_caption_wrapper">
     <p class="photo_caption"><span class="photo_caption_title">Пейнтбол.</span> Полезная игра
       <span class="nobr">в «стрелялки»:</span> дети двигаются,
       учатся работать в команде. Каждому игроку выдаём средства защиты: маски <span class="nobr">и костюмы</span>
     </p>
   </div>
-  <picture>
-    <source srcset="images/photo/pool.jpg 1x, images/photo/pool-2x.jpg 2x" media="(max-width: 1280px) ">
-    <img
-        src="images/photo/wide/pool.jpg"
-        srcset="images/photo/wide/pool.jpg 1x, images/photo/wide/pool-2x.jpg 2x"
-        class="block_image"
-        alt="Дети купаются в бассейне"
-    >
-  </picture>
+  <div class="holder horizontal_photo_holder">
+    <picture>
+      <source srcset="images/photo/pool.jpg 1x, images/photo/pool-2x.jpg 2x" media="(max-width: 1280px) ">
+      <img
+          src="images/photo/wide/pool.jpg"
+          srcset="images/photo/wide/pool.jpg 1x, images/photo/wide/pool-2x.jpg 2x"
+          class="block_image"
+          alt="Дети купаются в бассейне"
+      >
+    </picture>
+  </div>
   <div class="photo_caption_wrapper">
     <p class="photo_caption"><span class="photo_caption_title">Плавание.</span> Дети учатся плавать
       <span class="nobr">и купаются</span> <span class="nobr">в жару.</span>
@@ -611,15 +628,17 @@
 
 <div class="block_with_background robotics">
   <div class="content_wrapper robotics_section">
-    <picture>
-      <source srcset="images/photo/robotics.jpg 1x, images/photo/robotics-2x.jpg 2x" media="(max-width: 1280px) ">
-      <img
-          src="images/photo/wide/robotics.jpg"
-          srcset="images/photo/wide/robotics.jpg 1x, images/photo/wide/robotics-2x.jpg 2x"
-          class="block_image"
-          alt="Мальчик с недостроенной машинкой из лего. Перед ним коробка с деталями на всю площадь стола. В ней по ячейкам разложены колёса, шестерёнки, перемычки и другие элементы."
-      >
-    </picture>
+    <div class="holder horizontal_photo_holder">
+      <picture>
+        <source srcset="images/photo/robotics.jpg 1x, images/photo/robotics-2x.jpg 2x" media="(max-width: 1280px) ">
+        <img
+            src="images/photo/wide/robotics.jpg"
+            srcset="images/photo/wide/robotics.jpg 1x, images/photo/wide/robotics-2x.jpg 2x"
+            class="block_image"
+            alt="Мальчик с недостроенной машинкой из лего. Перед ним коробка с деталями на всю площадь стола. В ней по ячейкам разложены колёса, шестерёнки, перемычки и другие элементы."
+        >
+      </picture>
+    </div>
     <div class="photo_caption_wrapper">
       <p class="photo_caption"><span class="photo_caption_title">Робототехника.</span> <span class="nobr">Под руководством</span>
         педагога дети

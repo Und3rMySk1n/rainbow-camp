@@ -131,7 +131,6 @@ img
     position: absolute;
     width: 100%;
     height: 100%;
-    object-fit: cover;
 }
 
 .video_wrapper .video_poster,
@@ -1353,6 +1352,16 @@ img
     {
         background: url('../images/lego-2x.png') no-repeat;
     }
+
+    .block_with_background.girl_jumping_wrapper
+    {
+        background: url(../images/bg-footer-2x.jpg) no-repeat bottom center;
+    }
+
+    .teachers_section
+    {
+        background: url('../images/bg-teachers-2x.jpg') no-repeat bottom center;
+    }
 }
 
 @media screen and (min-width: 1281px)
@@ -2188,6 +2197,16 @@ img
     {
         background: url(../images/wide/lego-2x.png) no-repeat;
     }
+
+    .block_with_background.girl_jumping_wrapper
+    {
+        background: url(../images/bg-footer-wide-2x.jpg) no-repeat bottom -236px center;
+    }
+
+    .teachers_section
+    {
+        background: url(../images/bg-teachers-wide-2x.jpg) no-repeat bottom center;
+    }
 }
 
 @media screen and (max-width: 1200px)
@@ -2279,6 +2298,14 @@ img
     .lego
     {
         display: none;
+    }
+}
+
+@media screen and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2)
+{
+    .teachers_section
+    {
+        background: url('../images/bg-teachers-medium-2x.jpg');
     }
 }
 
@@ -3262,10 +3289,7 @@ img
         left: 5%;
         bottom: 300px;
     }
-}
 
-@media screen and (max-width: 600px)
-{
     .food_menu_section
     {
         margin-bottom: 42px;
@@ -3404,6 +3428,14 @@ img
     .adventures_section .notice_image
     {
         margin: -5px -30px 16px 30px;
+    }
+}
+
+@media screen and (max-width: 600px) and (-webkit-min-device-pixel-ratio: 2)
+{
+    .mobile_footer_wrapper
+    {
+        background: url(../images/bg-footer-mobile-2x.jpg) no-repeat top center;
     }
 }
 
@@ -3776,5 +3808,58 @@ img
         padding-top: 106px;
         background-position: top -36px left -193px;
         background-image: url(../images/bg-teachers-small.jpg);
+    }
+}
+
+@media screen and (max-width: 360px) and (-webkit-min-device-pixel-ratio: 2)
+{
+    .teachers_section
+    {
+        background-image: url(../images/bg-teachers-small-2x.jpg);
+    }
+}
+
+/* Image holders */
+.holder,
+.wide_photo_wrapper,
+.menu_wrapper
+{
+    position: relative;
+    background: #f0f0f0;
+    z-index: -1;
+}
+
+.holder picture,
+.wide_photo_wrapper picture,
+.menu_wrapper picture
+{
+    position: absolute;
+}
+
+.horizontal_photo_holder
+{
+    padding-bottom: 65.875%;
+}
+
+.vertical_photo_holder
+{
+    padding-bottom: 146.3157894%;
+}
+
+.wide_photo_wrapper
+{
+    padding-bottom: 50.49603174%;
+}
+
+.menu_wrapper
+{
+    padding-bottom: 180.5%;
+}
+
+@media screen and (max-width: 600px)
+{
+    .menu_wrapper
+    {
+        padding-bottom: 322.649572649%;
     }
 }

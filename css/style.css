@@ -2,7 +2,7 @@
 {
     margin: 0;
     padding: 0;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Ubuntu', 'Roboto', sans-serif;
     color: #000;
     box-sizing: border-box;
 }
@@ -403,9 +403,13 @@ img
 
 .small_orange_spot_holder
 {
-    position: relative;
+    position: absolute;
+    width: 100%;
     max-width: 800px;
     margin: 0 auto;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .small_orange_spot
@@ -3435,7 +3439,7 @@ img
 {
     .mobile_footer_wrapper
     {
-        background: url(../images/bg-footer-mobile-2x.jpg) no-repeat top center;
+        background: url(../images/bg-footer-mobile-2x.jpg) no-repeat top -90px center;
     }
 }
 
@@ -3519,7 +3523,7 @@ img
     .teachers_section
     {
         padding-top: 175px;
-        background-position: top -75px left -282px;
+        background-position: top -190px left -282px;
     }
 
     .teachers_section .leader_description,
@@ -3825,7 +3829,6 @@ img
 .menu_wrapper
 {
     position: relative;
-    background: #f0f0f0;
     z-index: -1;
 }
 
@@ -3848,12 +3851,20 @@ img
 
 .wide_photo_wrapper
 {
-    padding-bottom: 50.49603174%;
+    padding-bottom: 50.46875%;
 }
 
 .menu_wrapper
 {
     padding-bottom: 180.5%;
+}
+
+@media screen and (min-width: 1281px)
+{
+    .wide_photo_wrapper
+    {
+        padding-bottom: 42.03125%;
+    }
 }
 
 @media screen and (max-width: 600px)

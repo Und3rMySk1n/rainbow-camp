@@ -74,12 +74,19 @@ img
     background: url('../images/header-pinned.png');
 }
 
+.top_menu_wrapper.hidden
+{
+    display: none;
+}
+
 .top_menu
 {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     margin-top: 15px;
+    max-width: 800px;
+    width: 100%;
 }
 
 .top_menu li
@@ -89,7 +96,6 @@ img
 
 .top_menu_link
 {
-    margin: 0 19px;
     font-size: 15px;
     text-decoration: none;
     display: block;
@@ -110,7 +116,13 @@ img
     color: #fff;
     text-decoration: none;
     font-size: 15px;
-    margin: 0 19px;
+    transition: background 0.2s ease;
+}
+
+.top_menu_button:hover,
+.top_menu_button:focus
+{
+    background: #0056B3;
 }
 
 .content_wrapper
@@ -1176,6 +1188,7 @@ img
     border: none;
     font-size: 18px;
     margin-bottom: 11px;
+    transition: background 0.2s ease;
 }
 
 .order_form .submit_button:disabled
@@ -1439,7 +1452,6 @@ img
 
 @media screen and (min-width: 1281px)
 {
-
     .top_block
     {
         margin-top: 75px;
@@ -1459,11 +1471,12 @@ img
     .top_menu
     {
         margin-top: 20px;
+        max-width: 1000px;
     }
 
     .top_menu_link
     {
-        margin: 0 28px;
+        margin-top: -4px;
         font-size: 18px;
     }
 
@@ -1473,7 +1486,6 @@ img
         border-radius: 5px;
         line-height: 47px;
         font-size: 18px;
-        margin: 0 28px;
     }
 
     .main_info_section
@@ -1893,6 +1905,11 @@ img
     .block_with_background.robotics
     {
         margin-bottom: 0;
+    }
+
+    .robotics_section
+    {
+        margin-bottom: 125px;
     }
 
     .teachers_section .content_wrapper
@@ -2342,6 +2359,12 @@ img
 
 @media screen and (max-width: 1024px)
 {
+
+    .robotics_section
+    {
+        margin-bottom: 0;
+    }
+
     .teachers_section
     {
         background-position: top center;
@@ -2354,6 +2377,11 @@ img
         display: flex;
         max-width: 800px;
         margin: 0 auto;
+    }
+
+    .teachers_photo
+    {
+        max-width: 90%;
     }
 
     .teachers_section .content_title
@@ -2512,12 +2540,6 @@ img
     {
         margin-top: 0;
     }
-
-    .top_menu_link,
-    .top_menu_button
-    {
-        margin: 0 14px;
-    }
 }
 
 @media screen and (max-width: 860px)
@@ -2593,11 +2615,6 @@ img
         width: 853px;
         top: -200px;
         transform: translateX(-4%);
-    }
-
-    .robotics_section
-    {
-        margin-bottom: 84px;
     }
 
     .girl_jumping_wrapper .content_title
@@ -3282,14 +3299,14 @@ img
         width: 100%;
         display: flex;
         flex-direction: column-reverse;
-        margin: 0;
-        margin-bottom: 20px;
+        margin: 0 0 25px;
     }
 
     .developers
     {
         width: 100%;
         margin-right: 0;
+        line-height: 0;
     }
 
     .phone_details
@@ -3300,8 +3317,9 @@ img
 
     .teachers_section
     {
-        padding-top: 223px;
-        background-position: top -65px left -228px;
+        padding-top: 150px;
+        background: url('../images/bg-teachers-600.jpg');
+        background-position: top left;
         margin-bottom: 46px;
     }
 
@@ -3333,6 +3351,8 @@ img
     {
         font-size: 20px;
         margin-bottom: 5px;
+        display: inline-block;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.4);
     }
 
     .call_details
@@ -3563,6 +3583,11 @@ img
     {
         background: url(../images/bg-footer-mobile-2x.jpg) no-repeat top -90px center;
     }
+
+    .teachers_section
+    {
+        background: url('../images/bg-teachers-600-2x.jpg');
+    }
 }
 
 @media screen and (max-width: 540px)
@@ -3595,6 +3620,13 @@ img
         outline: none;
         margin: 17px 0 30px;
         cursor: pointer;
+        transition: background 0.2s ease;
+    }
+
+    .go_to_order:hover,
+    .go_to_order:focus
+    {
+        background: #0056B3;
     }
 
     .go_to_order.pinned
@@ -3638,7 +3670,7 @@ img
 
     .teachers_section
     {
-        padding-top: 190px;
+        padding-top: 150px;
     }
 
     .mosquito
@@ -3670,12 +3702,6 @@ img
     .robotics_section
     {
         margin-bottom: 28px;
-    }
-
-    .teachers_section
-    {
-        padding-top: 175px;
-        background-position: top -190px left -282px;
     }
 
     .teachers_section .leader_description,
@@ -3805,6 +3831,11 @@ img
     .call_details
     {
         margin: 0 0 20px;
+    }
+
+    .footer_link_wrapper
+    {
+        line-height: 0;
     }
 
     .copyright,
@@ -3958,7 +3989,10 @@ img
     {
         top: 20px;
     }
+}
 
+@media screen and (max-width: 340px)
+{
     .teachers_section
     {
         padding-top: 106px;
@@ -3967,7 +4001,7 @@ img
     }
 }
 
-@media screen and (max-width: 360px) and (-webkit-min-device-pixel-ratio: 2)
+@media screen and (max-width: 340px) and (-webkit-min-device-pixel-ratio: 2)
 {
     .teachers_section
     {

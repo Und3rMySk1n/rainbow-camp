@@ -390,6 +390,13 @@ if (isEnvNode) {
         else {
             topMenuWrapper.classList.add('pinned');
         }
+
+        if ((window.pageYOffset + window.innerHeight) > (buyTicketBlock.offsetTop + faqBlock.offsetTop + footerOffset)) {
+            topMenuWrapper.classList.add('hidden');
+        }
+        else {
+            topMenuWrapper.classList.remove('hidden');
+        }
     });
 
     window.addEventListener('scroll', () => {

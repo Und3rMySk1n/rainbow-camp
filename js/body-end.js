@@ -377,6 +377,12 @@ if (isEnvNode) {
     const topMenu = document.getElementById('topMenu');
     const menuLinks = Array.from(topMenu.getElementsByTagName('a'));
 
+    const goToOrderButton = document.getElementById('goToOrder');
+    const aboutBlock = document.getElementById('about');
+    const buyTicketBlock = document.getElementById('buyTicket');
+    const faqBlock = document.getElementById('faq');
+    const footerOffset = 200;
+
     window.addEventListener('scroll', () => {
         if (window.pageYOffset === 0) {
             topMenuWrapper.classList.remove('pinned');
@@ -385,6 +391,30 @@ if (isEnvNode) {
             topMenuWrapper.classList.add('pinned');
         }
     });
+
+    window.addEventListener('scroll', () => {
+        if (window.pageYOffset > aboutBlock.offsetTop) {
+            goToOrderButton.classList.add('pinned');
+        }
+        else {
+            goToOrderButton.classList.remove('pinned');
+        }
+
+        if ((window.pageYOffset + window.innerHeight) > (buyTicketBlock.offsetTop + faqBlock.offsetTop + footerOffset)) {
+            goToOrderButton.classList.add('hidden');
+        }
+        else {
+            goToOrderButton.classList.remove('hidden');
+        }
+    });
+
+    goToOrderButton.addEventListener('click', () => {
+        const targetY = window.pageYOffset + buyTicketBlock.getBoundingClientRect().top - topMenuWrapper.getBoundingClientRect().height - offset;
+        window.scrollTo({
+            top: targetY,
+            behavior: 'smooth'
+        });
+    })
 
     menuLinks.forEach(link => {
         link.addEventListener('click', event => {

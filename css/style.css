@@ -17,6 +17,11 @@ img
     max-width: 100%;
 }
 
+.go_to_order
+{
+    display: none;
+}
+
 .spot_holder
 {
     position: relative;
@@ -3574,6 +3579,36 @@ img
     .shifts_section
     {
         padding-bottom: 21px;
+    }
+
+    .go_to_order
+    {
+        display: block;
+        color: #fff;
+        line-height: 50px;
+        font-size: 16px;
+        text-align: center;
+        background: #0072DB;
+        border-radius: 5px;
+        border: none;
+        width: 100%;
+        outline: none;
+        margin: 17px 0 30px;
+        cursor: pointer;
+    }
+
+    .go_to_order.pinned
+    {
+        position: fixed;
+        bottom: 10px;
+        z-index: 2;
+        width: calc(100% - 30px);
+        left: 15px;
+    }
+
+    .go_to_order.hidden
+    {
+        display: none;
     }
 
     .activities_section .photo_caption_wrapper

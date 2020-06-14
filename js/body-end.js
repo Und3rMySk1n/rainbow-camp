@@ -370,3 +370,31 @@ if (isEnvNode) {
         formatTelephoneNumber,
     }
 }
+
+(() => {
+    const offset = 30;
+    const topMenuWrapper = document.getElementById('topMenuWrapper');
+    const topMenu = document.getElementById('topMenu');
+    const menuLinks = Array.from(topMenu.getElementsByTagName('a'));
+
+    window.addEventListener('scroll', () => {
+        if (window.pageYOffset === 0) {
+            topMenuWrapper.classList.remove('pinned');
+        }
+        else {
+            topMenuWrapper.classList.add('pinned');
+        }
+    });
+
+    menuLinks.forEach(link => {
+        link.addEventListener('click', event => {
+            event.preventDefault();
+            const target = document.querySelector(link.getAttribute('href'));
+            const targetY = window.pageYOffset + target.getBoundingClientRect().top - topMenuWrapper.getBoundingClientRect().height - offset;
+            window.scrollTo({
+                top: targetY,
+                behavior: 'smooth'
+            });
+        })
+    })
+})()

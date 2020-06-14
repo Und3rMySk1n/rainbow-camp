@@ -1857,7 +1857,7 @@ img
     {
         width: 575px;
         height: 472px;
-        bottom: -27px;
+        bottom: -26px;
         left: -214px;
         background: url(../images/splash-wide.png) no-repeat;
     }
@@ -1942,7 +1942,7 @@ img
     .teachers_section .leader_description
     {
         top: 354px;
-        width: 290px;
+        width: 275px;
     }
 
     .teachers_section .teacher_description
@@ -1950,7 +1950,7 @@ img
         position: absolute;
         right: 9px;
         top: 353px;
-        width: 335px;
+        width: 270px;
     }
 
     .leader_name,
@@ -2333,6 +2333,19 @@ img
     .teachers_section
     {
         background: url(../images/bg-teachers-wide-2x.jpg) no-repeat bottom center;
+    }
+}
+
+@media screen and (min-width: 1430px)
+{
+    .teachers_section .teacher_description
+    {
+        width: 335px;
+    }
+
+    .teachers_section .leader_description
+    {
+        width: 290px;
     }
 }
 
@@ -3387,6 +3400,7 @@ img
     {
         margin-bottom: 75px;
         padding: 0 15px;
+        max-width: none;
     }
 
     .footer_section

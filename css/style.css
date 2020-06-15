@@ -3063,6 +3063,7 @@ img
     .order_form .submit_button
     {
         width: 100%;
+        max-width: 420px;
     }
 
     .order_section

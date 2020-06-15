@@ -1335,6 +1335,7 @@ img
 {
     width: 299px;
     margin-right: 148px;
+    line-height: 0;
 }
 
 .copyright,
@@ -1511,13 +1512,12 @@ img
 
     .top_menu_link
     {
-        margin-top: -4px;
         font-size: 18px;
     }
 
     .top_menu_button
     {
-        padding: 14px 26px;
+        padding: 11px 26px 15px;
         border-radius: 5px;
         line-height: 47px;
         font-size: 18px;
@@ -1563,7 +1563,7 @@ img
 
     .notice_15_minutes .fifteen_minutes
     {
-        margin: 16px 0 9px 34px;
+        margin: 16px 0 9px 24px;
     }
 
     .notice_15_minutes .minutes_text,
@@ -1571,7 +1571,7 @@ img
     {
         font-size: 18px;
         line-height: 23px;
-        margin-right: -10px;
+        margin-right: 0;
     }
 
     .video_caption
@@ -3411,7 +3411,6 @@ img
     {
         width: 100%;
         margin-right: 0;
-        line-height: 0;
     }
 
     .phone_details

@@ -3673,6 +3673,7 @@ img
     .mobile_footer_wrapper
     {
         background: url('../images/bg-footer-mobile-2x.jpg') no-repeat top -90px center;
+        background-size: 720px auto;
     }
 
     .teachers_section

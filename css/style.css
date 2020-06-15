@@ -3104,18 +3104,6 @@ img
         padding-left: 15px;
     }
 
-    .play_button
-    {
-        width: 60px;
-        height: 60px;
-    }
-
-    .video_duration
-    {
-        font-size: 9px;
-        font-weight: 700;
-    }
-
     .content_title
     {
         font-size: 24px;
@@ -3422,9 +3410,9 @@ img
 
     .teachers_section
     {
-        padding-top: 150px;
-        background: url('../images/bg-teachers-600.jpg');
-        background-position: top left;
+        padding-top: 138px;
+        background: url(../images/bg-teachers-600.jpg);
+        background-position: top -15px left -136px;
         margin-bottom: 46px;
     }
 
@@ -3709,6 +3697,18 @@ img
 
 @media screen and (max-width: 480px)
 {
+    .play_button
+    {
+        width: 80px;
+        height: 80px;
+    }
+
+    .video_duration
+    {
+        font-size: 13px;
+        font-weight: 700;
+    }
+
     .shifts_section
     {
         padding-bottom: 21px;
@@ -3778,7 +3778,8 @@ img
 
     .teachers_section
     {
-        padding-top: 150px;
+        padding-top: 102px;
+        background-position: top -58px left -250px;
     }
 
     .mosquito
@@ -4101,13 +4102,28 @@ img
 
     .teachers_section
     {
-        padding-top: 120px;
+        padding-top: 92px;
+        background-position: top -45px left -200px;
     }
 
     .painting_section .theater .photo_caption
     {
         left: 0;
         top: 60px;
+    }
+}
+
+@media screen and (max-width: 380px)
+{
+    .play_button
+    {
+        width: 60px;
+        height: 60px;
+    }
+
+    .video_duration
+    {
+        font-size: 9px;
     }
 }
 

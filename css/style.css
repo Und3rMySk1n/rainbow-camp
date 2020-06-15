@@ -1444,36 +1444,44 @@ img
     .lego
     {
         background: url('../images/lego-2x.png') no-repeat;
+        background-size: 398px auto;
     }
 
     .block_with_background.girl_jumping_wrapper
     {
         background: url('../images/bg-footer-2x.jpg') no-repeat bottom center;
+        background-size: 1280px auto;
     }
 
     .teachers_section
     {
         background: url('../images/bg-teachers-2x.jpg') no-repeat bottom center;
+        background-size: 2021px auto;
+
     }
 
     .mosquito_icon
     {
         background: url('../images/icon-mosquito-2x.png') no-repeat;
+        background-size: 132px auto;
     }
 
     .first_aid_icon
     {
         background: url('../images/icon-first-aid-post-2x.png') no-repeat;
+        background-size: 130px auto;
     }
 
     .guard_icon
     {
         background: url('../images/icon-guard-2x.png') no-repeat;
+        background-size: 135px auto;
     }
 
     .map_section_spot_mobile
     {
         background: url('../images/red-spot-mobile-2x.png') no-repeat;
+        background-size: 242px auto;
     }
 }
 
@@ -2350,31 +2358,37 @@ img
     .lego
     {
         background: url('../images/wide/lego-2x.png') no-repeat;
+        background-size: 498px auto;
     }
 
     .block_with_background.girl_jumping_wrapper
     {
         background: url('../images/bg-footer-wide-2x.jpg') no-repeat bottom -236px center;
+        background-size: 2578px auto;
     }
 
     .teachers_section
     {
         background: url('../images/bg-teachers-wide-2x.jpg') no-repeat bottom center;
+        background-size: 1920px auto;
     }
 
     .mosquito_icon
     {
         background: url('../images/icon-mosquito-wide-2x.png') no-repeat;
+        background-size: 161px auto;
     }
 
     .first_aid_icon
     {
         background: url('../images/icon-first-aid-post-wide-2x.png') no-repeat;
+        background-size: 158px auto;
     }
 
     .guard_icon
     {
         background: url('../images/icon-guard-wide-2x.png') no-repeat;
+        background-size: 165px auto;
     }
 }
 
@@ -2514,6 +2528,7 @@ img
     .teachers_section
     {
         background: url('../images/bg-teachers-medium-2x.jpg');
+        background-size: 1024px auto;
     }
 }
 
@@ -3672,13 +3687,14 @@ img
 {
     .mobile_footer_wrapper
     {
-        background: url('../images/bg-footer-mobile-2x.jpg') no-repeat top -90px center;
+        background: url('../images/bg-footer-mobile-2x.jpg') no-repeat top -10px center;
         background-size: 720px auto;
     }
 
     .teachers_section
     {
         background: url('../images/bg-teachers-600-2x.jpg');
+        background-size: 720px auto;
     }
 }
 
@@ -3963,16 +3979,19 @@ img
     .mosquito_icon
     {
         background: url('../images/icon-mosquito-small-2x.png') no-repeat;
+        background-size: 116px auto;
     }
 
     .first_aid_icon
     {
         background: url('../images/icon-first-aid-post-small-2x.png') no-repeat;
+        background-size: 113px auto;
     }
 
     .guard_icon
     {
         background: url('../images/icon-guard-small-2x.png') no-repeat;
+        background-size: 118px auto;
     }
 }
 
@@ -4133,6 +4152,7 @@ img
     .teachers_section
     {
         background-image: url('../images/bg-teachers-small-2x.jpg');
+        background-size: 720px auto;
     }
 }
 

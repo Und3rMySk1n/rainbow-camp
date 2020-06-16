@@ -283,9 +283,35 @@ img
     display: flex;
 }
 
-.photo_caption_wrapper.right
+.photo_caption_wrapper.left .photo_caption
 {
-    justify-content: flex-end;
+    width: 340px;
+    margin-right: 20px;
+    height: 0;
+}
+
+.friendship_section .photo_caption_wrapper.left .photo_caption
+{
+    width: 380px;
+}
+
+.photo_caption_wrapper.left .photo_caption_filler
+{
+    width: 380px;
+    flex-grow: 0;
+}
+
+.photo_caption_wrapper.right .photo_caption
+{
+    width: 340px;
+    height: 0;
+    margin-top: 11px;
+}
+
+.photo_caption_wrapper.right .photo_caption_filler
+{
+    width: 380px;
+    margin-right: 40px;
 }
 
 .photo_caption
@@ -397,7 +423,7 @@ img
 {
     display: flex;
     justify-content: space-between;
-    margin-top: -12px;
+    margin-top: 8px;
 }
 
 .details_with_photo .details_wrapper
@@ -427,7 +453,7 @@ img
 .details_with_photo.dancing
 {
     justify-content: flex-start;
-    margin-top: -31px;
+    margin-top: 5px;
 }
 
 .details_with_photo.dancing .details_wrapper
@@ -1563,7 +1589,7 @@ img
 
     .notice_15_minutes .fifteen_minutes
     {
-        margin: 16px 0 9px 24px;
+        margin: 16px 0 9px 30px;
     }
 
     .notice_15_minutes .minutes_text,
@@ -1606,6 +1632,33 @@ img
     .content_title.block_title
     {
         margin: 0 0 20px -3px;
+    }
+
+    .photo_caption_wrapper.left .photo_caption
+    {
+        width: 400px;
+    }
+
+    .friendship_section .photo_caption_wrapper.left .photo_caption
+    {
+        width: 460px;
+    }
+
+    .photo_caption_wrapper.left .photo_caption_filler
+    {
+        width: 476px;
+    }
+
+    .photo_caption_wrapper.right .photo_caption
+    {
+        width: 400px;
+        margin-top: 9px;
+    }
+
+    .photo_caption_wrapper.right .photo_caption_filler
+    {
+        width: 476px;
+        margin-right: 48px;
     }
 
     .details_with_photo .details_wrapper
@@ -1657,7 +1710,7 @@ img
 
     .details_with_photo.dancing
     {
-        margin-top: -36px;
+        margin-top: 9px;
     }
 
     .details_with_photo.dancing .photo_wrapper
@@ -2001,8 +2054,8 @@ img
 
     .teachers_section .teacher_name
     {
-        width: 260px;
-        right: 79px;
+        width: 270px;
+        right: 9px;
         bottom: 43px;
     }
 
@@ -2338,7 +2391,7 @@ img
 
     .details_with_photo
     {
-        margin-top: -13px;
+        margin-top: 9px;
     }
 
     .question_answer.before_next_question
@@ -2394,7 +2447,8 @@ img
 
 @media screen and (min-width: 1430px)
 {
-    .teachers_section .teacher_description
+    .teachers_section .teacher_description,
+    .teachers_section .teacher_name
     {
         width: 335px;
     }
@@ -2634,16 +2688,6 @@ img
         justify-content: flex-start;
     }
 
-    .photo_caption.limited_width
-    {
-        width: 94%;
-    }
-
-    .details_with_photo
-    {
-        margin-top: 10px;
-    }
-
     .details_with_photo.dancing
     {
         margin-top: 6px;
@@ -2705,6 +2749,21 @@ img
     .girl_jumping_wrapper .content_title
     {
         max-width: 360px;
+    }
+
+    .girl_jumping_wrapper .content_title.faq_section_title
+    {
+        max-width: 94%;
+    }
+
+    .block_with_background.girl_jumping_wrapper
+    {
+        background-position: bottom -30px center;
+    }
+
+    .order_section
+    {
+        margin: 0 auto 200px;
     }
 }
 
@@ -2796,6 +2855,27 @@ img
         right: 4px;
     }
 
+    .painting_section .theater .photo_caption
+    {
+        left: -30px;
+        bottom: 150px;
+        width: 210px;
+    }
+
+    .developers
+    {
+        width: 399px;
+        margin-right: 48px;
+    }
+
+    .faq_section
+    {
+        margin-bottom: 180px;
+    }
+}
+
+@media screen and (max-width: 760px)
+{
     .form_image
     {
         display: none;
@@ -2806,26 +2886,22 @@ img
         background-position: bottom -70px center;
     }
 
-    .faq_section
-    {
-        margin-bottom: 260px;
-    }
-
     .order_section
     {
         max-width: 520px;
+        margin: 0 0 261px;
+        padding: 0 15px;
+    }
+
+    .order_form .form_input,
+    .order_form .submit_button
+    {
+        max-width: 420px;
     }
 
     .girl_jumping_wrapper .content_title
     {
         max-width: none;
-    }
-
-    .painting_section .theater .photo_caption
-    {
-        left: -30px;
-        bottom: 150px;
-        width: 210px;
     }
 
     .order_form .form_input,
@@ -2839,10 +2915,9 @@ img
         margin-bottom: 120px;
     }
 
-    .developers
+    .faq_section
     {
-        width: 399px;
-        margin-right: 48px;
+        margin-bottom: 260px;
     }
 }
 
@@ -2942,6 +3017,22 @@ img
         margin-right: 0;
         max-width: 460px;
         padding-top: 20px;
+    }
+
+    .photo_caption_wrapper.left .photo_caption,
+    .photo_caption_wrapper.right .photo_caption,
+    .friendship_section .photo_caption_wrapper.left .photo_caption
+    {
+        width: 94%;
+        margin-right: 0;
+        height: auto;
+        margin-top: 8px;
+    }
+
+    .photo_caption_wrapper.left .photo_caption_filler,
+    .photo_caption_wrapper.right .photo_caption_filler
+    {
+        display: none;
     }
 
     .details_with_photo .photo_wrapper
@@ -3057,13 +3148,6 @@ img
     .order_section .order_features_list
     {
         margin-bottom: 40px;
-    }
-
-    .order_form .form_input,
-    .order_form .submit_button
-    {
-        width: 100%;
-        max-width: 420px;
     }
 
     .order_section
@@ -3412,7 +3496,7 @@ img
     {
         padding-top: 138px;
         background: url(../images/bg-teachers-600.jpg);
-        background-position: top -15px left -136px;
+        background-position: top -15px left -110px;
         margin-bottom: 46px;
     }
 

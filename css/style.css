@@ -2310,7 +2310,7 @@ img
 
     .phone
     {
-        margin: 0 0 2px;
+        margin: 0 0 2px -1px;
         font-size: 19px;
         line-height: 23px;
     }
@@ -3195,6 +3195,11 @@ img
         margin: 0 0 18px;
     }
 
+    .teachers_section .content_title
+    {
+        line-height: 28px;
+    }
+
     .content_text
     {
         font-size: 16px;
@@ -3202,6 +3207,7 @@ img
         margin: 0 0 16px;
     }
 
+    .content_title,
     .content_text,
     .content_text.limited_with,
     .comfort_section .content_text,
@@ -3699,6 +3705,7 @@ img
         padding: 0 15px 0 0;
         width: 60%;
         max-width: 260px;
+        margin-right: 20px;
     }
 
     .music_section .music .photo_caption
@@ -3776,6 +3783,12 @@ img
     .map_section .content_text
     {
         padding-right: 220px;
+    }
+
+    .map_section_spot
+    {
+        top: -88px;
+        right: 12px;
     }
 }
 
@@ -4186,8 +4199,8 @@ img
 
     .teachers_section
     {
-        padding-top: 92px;
-        background-position: top -45px left -200px;
+        padding-top: 102px;
+        background-position: top -55px left -280px;
     }
 
     .painting_section .theater .photo_caption
@@ -4244,6 +4257,11 @@ img
         padding-top: 106px;
         background-position: top -36px left -193px;
         background-image: url('../images/bg-teachers-small.jpg');
+    }
+
+    .music_section .cartoons .photo_caption
+    {
+        margin-right: 0;
     }
 }
 

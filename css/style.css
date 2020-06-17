@@ -1369,17 +1369,25 @@ img
 {
     font-size: 14px;
     line-height: 17px;
+}
+
+.footer_link_wrapper
+{
     margin: 0 0 3px;
 }
 
 .phone
 {
-    display: block;
     margin: 0 0 2px;
     font-size: 16px;
     line-height: 18px;
-    color: black;
+    display: none;
 }
+
+.phone.desktop_phone
+ {
+     display: inline-block;
+ }
 
 .call_details
 {
@@ -2700,6 +2708,11 @@ img
 
     .friendship_section
     {
+        margin-bottom: 90px;
+    }
+
+    .friendship_section
+    {
         padding-top: 60px;
         margin-top: 0;
     }
@@ -2742,7 +2755,7 @@ img
     .yellow_spot
     {
         width: 853px;
-        top: -200px;
+        top: -240px;
         transform: translateX(-4%);
     }
 
@@ -2883,7 +2896,7 @@ img
 
     .block_with_background.girl_jumping_wrapper
     {
-        background-position: bottom -70px center;
+        background-position: bottom -125px center;
     }
 
     .order_section
@@ -2917,7 +2930,7 @@ img
 
     .faq_section
     {
-        margin-bottom: 260px;
+        margin-bottom: 165px;
     }
 }
 
@@ -2994,6 +3007,11 @@ img
         overflow: hidden;
     }
 
+    .friendship_section
+    {
+        margin-bottom: 0;
+    }
+
     .main_info_section
     {
         margin-top: 10px;
@@ -3042,7 +3060,7 @@ img
 
     .shifts_section
     {
-        padding-bottom: 65px;
+        padding-bottom: 25px;
     }
 
     .belt_image
@@ -3090,9 +3108,15 @@ img
         left: 128px;
     }
 
-    .comfort_section
+    .comfort_section,
+    .food_menu_section
     {
         margin-bottom: 47px;
+    }
+
+    .map_section
+    {
+        margin-bottom: 65px;
     }
 
     .comfort_section .content_wrapper
@@ -3132,7 +3156,7 @@ img
         height: 251px;
         background: url('../images/red-spot-medium.png') no-repeat;
         top: -107px;
-        padding: 84px 32px 108px 90px;
+        padding: 74px 32px 108px 90px;
     }
 
     .form_image
@@ -3176,6 +3200,11 @@ img
         display: none;
     }
 
+    .friendship_section
+    {
+        margin-bottom: 47px;
+    }
+
     .block_with_background,
     .block_with_background.friendship_section
     {
@@ -3216,6 +3245,11 @@ img
     .photo_caption
     {
         max-width: 94%;
+    }
+
+    .safety_section .content_title
+    {
+        max-width: 100%;
     }
 
     .teachers_section .photo_caption
@@ -3538,6 +3572,11 @@ img
         border-bottom: 1px solid rgba(255, 255, 255, 0.4);
     }
 
+    .phone.desktop_phone
+    {
+        display: none;
+    }
+
     .call_details
     {
         margin: 0 0 25px;
@@ -3787,7 +3826,7 @@ img
 
     .map_section_spot
     {
-        top: -88px;
+        top: -55px;
         right: 12px;
     }
 }
@@ -3876,7 +3915,7 @@ img
     .teachers_section
     {
         padding-top: 102px;
-        background-position: top -58px left -250px;
+        background-position: top -58px left -241px;
     }
 
     .mosquito

@@ -2302,11 +2302,15 @@ img
         margin-top: -23px;
     }
 
+    .footer_link_wrapper
+    {
+        margin: 0 0 2px;
+    }
+
     .copyright, .copyright span
     {
         font-size: 16px;
         line-height: 21px;
-        margin: 0 0 1px;
     }
 
     .phones_wrapper
@@ -2735,9 +2739,9 @@ img
     /* Spots */
     .purple_spot
     {
-        width: 750px;
-        top: -90px;
-        transform: translateX(0.4%);
+        width: 860px;
+        background: url('../images/back-purple-860.jpg');
+        transform: translateX(-71.9%);
     }
 
     .yellow_spot
@@ -2765,6 +2769,15 @@ img
     .order_section
     {
         margin: 0 auto 200px;
+    }
+}
+
+@media screen and (max-width: 860px) and (-webkit-min-device-pixel-ratio: 2)
+{
+    .purple_spot
+    {
+        background: url('../images/back-purple-860-2x.jpg');
+        background-size: 860px auto;
     }
 }
 
@@ -3029,6 +3042,11 @@ img
     .details_with_photo .photo_wrapper
     {
         display: none;
+    }
+
+    .purple_spot
+    {
+        transform: translateX(-77.9%);
     }
 
     .shifts_section
@@ -3490,7 +3508,7 @@ img
         width: 100%;
         display: flex;
         flex-direction: column-reverse;
-        margin: 0 0 25px;
+        margin: 0 0 21px;
     }
 
     .developers
@@ -4053,7 +4071,7 @@ img
 
     .call_details
     {
-        margin: 0 0 20px;
+        margin: 0 0 22px;
     }
 
     .footer_link_wrapper

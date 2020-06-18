@@ -2740,8 +2740,8 @@ img
     .purple_spot
     {
         width: 860px;
-        background: url('../images/back-purple-860.jpg');
         transform: translateX(-71.9%);
+        top: -113px;
     }
 
     .yellow_spot
@@ -2769,15 +2769,6 @@ img
     .order_section
     {
         margin: 0 auto 200px;
-    }
-}
-
-@media screen and (max-width: 860px) and (-webkit-min-device-pixel-ratio: 2)
-{
-    .purple_spot
-    {
-        background: url('../images/back-purple-860-2x.jpg');
-        background-size: 860px auto;
     }
 }
 
@@ -3240,7 +3231,8 @@ img
 
     .safety_section .content_title
     {
-        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .teachers_section .photo_caption
@@ -3543,7 +3535,9 @@ img
 
     .teachers_section .content_title
     {
-        max-width: 100%;
+        max-width: 94%;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .vk_link

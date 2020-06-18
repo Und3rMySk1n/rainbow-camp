@@ -27,23 +27,43 @@ if (isEnvBrowser) {
     /*
         Custom play buttons and posters for videos
     */
+    // var youtubeApiScript = document.createElement('script');
+
+    // youtubeApiScript.src = "https://www.youtube.com/iframe_api";
+    // var firstScriptTag = document.getElementsByTagName('script')[0];
+    // firstScriptTag.parentNode.insertBefore(youtubeApiScript, firstScriptTag);
+
     const videos = VIDEOS
-        .map( video => ({
-            ...video, domElement: document.querySelector(`.${video.sectionClassName} .${CLASS_VIDEO_WRAPPER}`)
-        }) )
+        .map(video => {
+            const domElement = document.querySelector(`.${video.sectionClassName} .${CLASS_VIDEO_WRAPPER}`);
+            const videoSrc = document.querySelector(`.${video.sectionClassName} .${CLASS_VIDEO_FRAME}`).src;
+            const youtubeId = /.*\/embed\/(.*)\?.*/.exec[1];
+
+            return {
+                ...video,
+                domElement,
+                youtubeId,
+            };
+        })
         .filter( ({ domElement }) => domElement );
+
+    const isPlatformMobile = navigator.userAgent.toLowerCase().match('ipad|iphone|android');
+
+    if (!isPlatformMobile) {
+        for (const { poster, domElement, youtubeId, sectionClassName } of videos) {
+            // const videoFrame = domElement.querySelector(`.${CLASS_VIDEO_FRAME}`);
+            // videoFrame.id = `${sectionClassName}-${CLASS_VIDEO_FRAME}-${youtubeId}`;
     
-    
-    for (const { poster, domElement } of videos) {
-        domElement.addEventListener('click', () => {
-            if (domElement.classList.contains(CLASS_CUSTOM_PLAY_BUTTON)) {
-                domElement.classList.remove(CLASS_CUSTOM_PLAY_BUTTON);
-                domElement.querySelector(`.${CLASS_VIDEO_FRAME}`).src += '&autoplay=1';
-            }
-        });
-    
-        domElement.querySelector(`.${CLASS_VIDEO_POSTER}`).src = poster;
-        domElement.classList.add(CLASS_CUSTOM_PLAY_BUTTON);
+            domElement.addEventListener('click', () => {
+                if (domElement.classList.contains(CLASS_CUSTOM_PLAY_BUTTON)) {
+                    domElement.classList.remove(CLASS_CUSTOM_PLAY_BUTTON);
+                    domElement.querySelector(`.${CLASS_VIDEO_FRAME}`).src += '&autoplay=1';
+                }
+            });
+        
+            domElement.querySelector(`.${CLASS_VIDEO_POSTER}`).src = poster;
+            domElement.classList.add(CLASS_CUSTOM_PLAY_BUTTON);
+        }
     }
     
     /*

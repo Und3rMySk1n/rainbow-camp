@@ -3447,6 +3447,11 @@ img
         margin-bottom: 90px;
     }
 
+    .safety_section .content_title
+    {
+        white-space: unset;
+    }
+
     .map_section
     {
         margin-bottom: 58px;
